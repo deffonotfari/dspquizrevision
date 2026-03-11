@@ -138,7 +138,7 @@
       "A": "The height of the wave",
       "B": "The speed of oscillation (how many cycles per second)",
       "C": "The distance between two peaks",
-      "D": The loudness of the sound"
+      "D": "The loudness of the sound"
     },
     "answer": "B"
   },
@@ -388,10 +388,10 @@
     "section": "dsp-fundamentals-sampling-frequency",
     "question": "What is quantization error?",
     "choices": {
-      "A": The difference between the original analog signal and the sampled digital value",
-      "B": The loss of high frequencies",
-      "C": The noise introduced by the ADC",
-      "D": The rounding error when converting continuous amplitude to discrete levels"
+      "A": "The difference between the original analog signal and the sampled digital value",
+      "B": "The loss of high frequencies",
+      "C": "The noise introduced by the ADC",
+      "D": "The rounding error when converting continuous amplitude to discrete levels"
     },
     "answer": "D"
   },
