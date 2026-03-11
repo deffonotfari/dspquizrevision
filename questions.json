@@ -52,7 +52,7 @@
       "C": "Motion Sensing",
       "D": "Various Quantities"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "section": "week-1-signal-basics",
@@ -87,6 +87,7 @@
     },
     "answer": "C"
   },
+  
   {
     "section": "week-1-signal-basics",
     "question": "In the mathematical model of a 2D image signal, what does y = f(x, y) represent?",
@@ -120,6 +121,7 @@
     },
     "answer": "B"
   },
+  
   {
     "section": "week-1-signal-basics",
     "question": "In the function I(x, y) for a grayscale image, what does I represent?",
@@ -265,7 +267,7 @@
   },
   {
     "section": "week-1-signal-basics",
-    "question": "In a transversal wave, give an example",
+    "question": "Give an example of a transversal wave",
     "choices": {
       "A": "Water",
       "B": "Air",
@@ -567,7 +569,7 @@
       "C": "*100",
       "D": "*1000"
     },
-    "answer": "B"
+    "answer": "C"
   },
   {
     "section": "week-1-signal-basics",
@@ -1597,7 +1599,7 @@
     "section": "dsp-theory-correlation-convolution",
     "question": "What is the spectrum of a signal?",
     "choices": {
-      "A": "The amplitude and phase of each frequency component",
+      "A": "The amplitude of the signal per frequency",
       "B": "The time-domain waveform",
       "C": "The energy of the signal",
       "D": "The sampling rate"
@@ -1725,6 +1727,567 @@
     },
     "answer": "B"
   },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "In the time domain representation of an analog signal, what is the mathematical notation used to describe it as a function?",
+      "choices": {
+        "A": "x[n]: ℤ → ℝ",
+        "B": "xₐ(t): ℝ → ℝ",
+        "C": "x[m,n]: ℤ² → ℤ",
+        "D": "X(f): ℝ → ℂ"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What does the notation xₐ(t): ℝ → ℝ signify about an analog signal?",
+      "choices": {
+        "A": "It takes discrete time values and produces discrete amplitudes",
+        "B": "It takes continuous time values (real numbers) and produces continuous amplitude values (real numbers)",
+        "C": "It takes two-dimensional spatial coordinates and produces a single value",
+        "D": "It takes frequency as input and produces complex numbers as output"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What is the correct mathematical notation for a digital signal in the time domain?",
+      "choices": {
+        "A": "xₐ(t): ℝ → ℝ",
+        "B": "x(f): ℝ → ℂ",
+        "C": "x[n]: ℤ → ℝ (or ℤ → ℤ)",
+        "D": "x[n,m]: ℤ² → ℝ"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What does the square bracket notation x[n] versus parentheses x(t) indicate in signal processing?",
+      "choices": {
+        "A": "x[n] indicates a continuous signal, x(t) indicates a discrete signal",
+        "B": "x[n] indicates a discrete-time signal, x(t) indicates a continuous-time signal",
+        "C": "x[n] is for audio signals only, x(t) is for image signals only",
+        "D": "There is no difference; they are interchangeable"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What does it mean when the slides state that a digital signal x[n] is approximately equal to xₐ(n/Fs)?",
+      "choices": {
+        "A": "The digital signal is an exact copy of the analog signal",
+        "B": "The digital signal represents the analog signal's amplitude at discrete time points spaced 1/Fs seconds apart",
+        "C": "The digital signal has Fs times more samples than the analog signal",
+        "D": "The digital signal is the derivative of the analog signal"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "In the time domain, what operation does y[n] = a·x[n] perform on a signal?",
+      "choices": {
+        "A": "Time-shifting the signal",
+        "B": "Changing the amplitude (scaling) of the signal",
+        "C": "Adding two signals together",
+        "D": "Filtering the signal"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "If |a| > 1 in the operation y[n] = a·x[n] for an audio signal, what is the perceptual result?",
+      "choices": {
+        "A": "The sound becomes quieter",
+        "B": "The sound becomes louder/brighter",
+        "C": "The pitch increases",
+        "D": "The sound is delayed"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What mathematical operation represents mixing two signals together in the time domain?",
+      "choices": {
+        "A": "y[n] = x₁[n] · x₂[n]",
+        "B": "y[n] = x₁[n] - x₂[n]",
+        "C": "y[n] = x₁[n] + x₂[n]",
+        "D": "y[n] = x₁[n] / x₂[n]"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What does the time-shifting operation y[n] = x[n - k] accomplish?",
+      "choices": {
+        "A": "It changes the amplitude of the signal",
+        "B": "It delays the signal by k samples",
+        "C": "It advances the signal by k samples",
+        "D": "It filters out high frequencies"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "If y[n] = x[n - 5], how many samples is the signal delayed?",
+      "choices": {
+        "A": "Advanced by 5 samples",
+        "B": "Delayed by 5 samples",
+        "C": "Delayed by 10 samples",
+        "D": "No delay, it's the same signal"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What is the mathematical notation for a 2D analog image signal?",
+      "choices": {
+        "A": "xₐ(t): ℝ → ℝ",
+        "B": "xₐ(x,y): ℝ² → ℝ",
+        "C": "x[n]: ℤ → ℝ",
+        "D": "x[n,m]: ℤ² → ℤ"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What does the notation xₐ(x,y): ℝ² → ℝ signify for an analog image?",
+      "choices": {
+        "A": "It takes one spatial coordinate and time and produces an amplitude",
+        "B": "It takes two continuous spatial coordinates and produces a continuous intensity/brightness value",
+        "C": "It takes discrete pixel coordinates and produces discrete brightness values",
+        "D": "It takes frequency coordinates and produces complex numbers"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What is the correct mathematical notation for a digital image (grayscale)?",
+      "choices": {
+        "A": "xₐ(x,y): ℝ² → ℝ",
+        "B": "x(t): ℝ → ℝ",
+        "C": "x[n,m]: ℤ² → ℤ",
+        "D": "x[n]: ℤ → ℤ"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "In the digital image notation x[n,m] ≈ xₐ(n/Fs, m/Fs), what do n and m represent?",
+      "choices": {
+        "A": "The brightness values at those coordinates",
+        "B": "The discrete sample indices in the horizontal and vertical directions",
+        "C": "The sampling frequency in each dimension",
+        "D": "The continuous spatial coordinates in millimeters"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "In digital imaging, what is the equivalent of sampling frequency in the spatial domain?",
+      "choices": {
+        "A": "Bit depth (number of bits per pixel)",
+        "B": "Colour depth",
+        "C": "Spatial resolution, often measured in dots per inch (DPI) or pixels per inch (PPI)",
+        "D": "Aspect ratio"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What does DPI stand for in the context of digital images?",
+      "choices": {
+        "A": "Digital Pixel Interface",
+        "B": "Dots Per Inch (a measure of spatial sampling frequency)",
+        "C": "Depth Per Image",
+        "D": "Double Precision Integer"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "If an image has a resolution of 300 DPI, what does this mean?",
+      "choices": {
+        "A": "There are 300 pixels in the entire image",
+        "B": "There are 300 samples (pixels) per inch in both dimensions",
+        "C": "Each pixel uses 300 bits of data",
+        "D": "The image is 300 inches wide"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "For digital images, what determines the spatial sampling frequency?",
+      "choices": {
+        "A": "The colour depth of the image",
+        "B": "The number of pixels per unit distance (e.g., DPI)",
+        "C": "The file format (JPEG, PNG, etc.)",
+        "D": "The bit depth of each pixel"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "In the context of images, what is the equivalent of quantization (from audio)?",
+      "choices": {
+        "A": "Spatial resolution (DPI)",
+        "B": "Image dimensions (width × height)",
+        "C": "Bit depth (number of bits per pixel, determining the number of possible colours or intensity levels)",
+        "D": "Aspect ratio"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "If a grayscale image uses 8 bits per pixel, how many different intensity levels can each pixel represent?",
+      "choices": {
+        "A": "8",
+        "B": "64",
+        "C": "256 (2⁸)",
+        "D": "16.7 million"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "A colour image uses 24 bits per pixel (8 bits each for Red, Green, and Blue). Approximately how many different colours can it represent?",
+      "choices": {
+        "A": "256",
+        "B": "65,536",
+        "C": "16.7 million (2²⁴)",
+        "D": "24"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What visual artifact is equivalent to quantization error in images?",
+      "choices": {
+        "A": "Blurring",
+        "B": "Posterisation (banding) - where smooth gradients appear as distinct steps",
+        "C": "Moiré patterns",
+        "D": "Sharpening"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What is the visual equivalent of aliasing in digital images called?",
+      "choices": {
+        "A": "Pixelation",
+        "B": "Posterisation",
+        "C": "Moiré patterns",
+        "D": "Chromatic aberration"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "The slides mention that woven fabric patterns can exceed camera resolution. What is the resulting visual artifact?",
+      "choices": {
+        "A": "The fabric appears blurry",
+        "B": "The colours of the fabric change",
+        "C": "Moiré patterns appear due to spatial aliasing",
+        "D": "The fabric pattern becomes sharper"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "Why can the aliasing effect appear differently per colour channel in a digital camera?",
+      "choices": {
+        "A": "Because different colours have different wavelengths",
+        "B": "Because cameras use different sampling rates for each colour channel due to the Bayer filter pattern",
+        "C": "Because red light travels faster than blue light",
+        "D": "Because JPEG compression affects colours differently"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "In image processing, what is the spatial equivalent of an anti-aliasing filter?",
+      "choices": {
+        "A": "A sharpening filter",
+        "B": "An optical low-pass filter (or blurring filter) placed in front of the sensor to remove fine details that would cause aliasing",
+        "C": "A colour correction matrix",
+        "D": "A contrast enhancement algorithm"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "Many digital cameras have an optical low-pass filter (OLPF) or anti-aliasing filter. What is its purpose?",
+      "choices": {
+        "A": "To increase the image resolution",
+        "B": "To slightly blur the image to prevent moiré patterns caused by spatial aliasing",
+        "C": "To enhance edge sharpness",
+        "D": "To correct for lens distortions"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "The slides show two sine waves: one low frequency and one high frequency. What is the key visual difference in how they are represented when sampled?",
+      "choices": {
+        "A": "The low frequency wave appears jagged, the high frequency appears smooth",
+        "B": "The high frequency wave may be represented by too few points, making it look like a lower frequency wave",
+        "C": "The low frequency wave has higher amplitude",
+        "D": "The high frequency wave has more samples per cycle"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What is the intuitive rule of thumb for the minimum samples needed per wave cycle to avoid aliasing?",
+      "choices": {
+        "A": "One sample per cycle (for the peak only)",
+        "B": "Two samples per cycle (one for the peak and one for the trough)",
+        "C": "Ten samples per cycle for accurate representation",
+        "D": "The number of samples depends on the wave's amplitude"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "According to the slides, what happens to frequencies in a signal that are above the Nyquist frequency?",
+      "choices": {
+        "A": "They are stored as high frequencies but marked as aliased",
+        "B": "They are removed from the signal",
+        "C": "They get 'mirrored down' at the Nyquist frequency and appear as lower frequencies",
+        "D": "They are amplified"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "The slides state that aliasing can occur when sampling mathematical functions to generate digital signals. What is an example of this?",
+      "choices": {
+        "A": "Generating a sine wave in code with a frequency above the Nyquist limit for the chosen sample rate",
+        "B": "Adding two sine waves together",
+        "C": "Applying a gain to a signal",
+        "D": "Reading an audio file from disk"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What are the four main types of filters mentioned in the slides, named by the frequency bands they pass?",
+      "choices": {
+        "A": "Low-pass, high-pass, band-pass, and band-reject",
+        "B": "Shelf, peak, notch, and comb",
+        "C": "FIR, IIR, analog, and digital",
+        "D": "Butterworth, Chebyshev, Elliptic, and Bessel"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What are common real-world examples of filters mentioned in the slides?",
+      "choices": {
+        "A": "Compressors and limiters",
+        "B": "Equalizers (EQs) in stereos and blurring/sharpening filters for images",
+        "C": "Reverb and delay units",
+        "D": "Analog-to-digital converters"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "According to the slides, what are the two solutions to the aliasing problem?",
+      "choices": {
+        "A": "Increase bit depth or use a high-pass filter",
+        "B": "Increase time/space resolution or use an anti-aliasing filter",
+        "C": "Use a reconstruction filter or increase the signal amplitude",
+        "D": "Use dithering or oversampling"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "Why might increasing the time or space resolution not always be a practical solution to aliasing?",
+      "choices": {
+        "A": "It doesn't solve the problem",
+        "B": "It may not be possible (hardware limits) or practical (file size/storage limits)",
+        "C": "It makes the signal louder",
+        "D": "It introduces more quantization error"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "The slides mention that the output created from a DAC contains additional frequencies. What is the purpose of a reconstruction filter?",
+      "choices": {
+        "A": "To add these frequencies back in",
+        "B": "To convert the signal back to digital",
+        "C": "To remove these additional high-frequency 'image' components, smoothing the output",
+        "D": "To boost the signal's amplitude"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What is the name of the function that describes the effect of a zero-order hold on the signal's spectrum?",
+      "choices": {
+        "A": "A rectangular function",
+        "B": "A Gaussian function",
+        "C": "A sinc function (sin(x)/x)",
+        "D": "A Dirac delta function"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What are the two main categories of noise oscillators mentioned in terms of their frequency distribution?",
+      "choices": {
+        "A": "Loud noise and quiet noise",
+        "B": "White noise (evenly distributed) and pink noise (weaker high frequencies, 1/f)",
+        "C": "Digital noise and analog noise",
+        "D": "Harmonic noise and inharmonic noise"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What does VCF stand for in the context of analog synthesizers?",
+      "choices": {
+        "A": "Variable Capacitance Filter",
+        "B": "Voltage Controlled Filter",
+        "C": "Very Compact Filter",
+        "D": "Vocal Characteristic Former"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What does VCA stand for in the context of analog synthesizers?",
+      "choices": {
+        "A": "Voltage Controlled Amplifier",
+        "B": "Variable Capacitance Amplifier",
+        "C": "Vibrato Control Assembly",
+        "D": "Vector Controlled Array"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "In a time-varying gain control unit, y[t] = x[t] * c[t], if c[t] is not constant, what is this unit called?",
+      "choices": {
+        "A": "Time-invariant gain",
+        "B": "Time-variant gain",
+        "C": "Static filter",
+        "D": "Quantizer"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What is an LFO (Low-Frequency Oscillator) typically used for in a synthesizer?",
+      "choices": {
+        "A": "To generate the main audible pitch of a note",
+        "B": "To modulate parameters like pitch (vibrato) or amplitude (tremolo) at a low rate",
+        "C": "To generate white noise",
+        "D": "To filter the signal"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What does ADSR stand for in an envelope generator?",
+      "choices": {
+        "A": "Audio Dynamics Synthesis Response",
+        "B": "Attack, Decay, Sustain, Release",
+        "C": "Amplitude, Duration, Shape, Range",
+        "D": "Analog Digital Signal Router"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "In an ADSR envelope, which stage determines how long it takes for the sound to reach its maximum level after a note is triggered?",
+      "choices": {
+        "A": "Decay",
+        "B": "Sustain",
+        "C": "Attack",
+        "D": "Release"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "In an ADSR envelope, which stage determines the level that the sound holds as long as the key is pressed (after the initial Attack and Decay)?",
+      "choices": {
+        "A": "Attack",
+        "B": "Decay",
+        "C": "Sustain",
+        "D": "Release"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "In an ADSR envelope, which stage determines how long it takes for the sound to fade to zero after the key is released?",
+      "choices": {
+        "A": "Attack",
+        "B": "Decay",
+        "C": "Sustain",
+        "D": "Release"
+      },
+      "answer": "D"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "According to the slides, which parameters of an ADSR envelope are typically 'rate' or 'time' parameters, and which is a 'level' parameter?",
+      "choices": {
+        "A": "All are rate parameters",
+        "B": "All are level parameters",
+        "C": "Attack, Decay, and Release are rates; Sustain is a level",
+        "D": "Attack and Release are rates; Decay and Sustain are levels"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "In a digital system, what does a gain control unit do to every sample?",
+      "choices": {
+        "A": "It delays the sample",
+        "B": "It multiplies the sample with a gain factor",
+        "C": "It adds noise to the sample",
+        "D": "It quantizes the sample"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What is the purpose of MIDI (Musical Instrument Digital Interface) as mentioned in the slides?",
+      "choices": {
+        "A": "To store high-quality digital audio",
+        "B": "To allow external controllers, like a keyboard, to communicate with synthesizers",
+        "C": "To connect microphones to speakers",
+        "D": "To convert analog to digital signals"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "In a typical ADSR envelope, what event typically triggers the Attack, Decay, and Sustain stages?",
+      "choices": {
+        "A": "A clock signal",
+        "B": "A MIDI note-on message",
+        "C": "The LFO reaching its peak",
+        "D": "The filter cutoff frequency"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "dsp-fundamentals-sampling-frequency",
+      "question": "What event typically triggers the Release stage of an ADSR envelope?",
+      "choices": {
+        "A": "A clock signal",
+        "B": "The LFO reaching its peak",
+        "C": "A MIDI note-off message (key released)",
+        "D": "The end of the Decay stage"
+      },
+      "answer": "C"
+    },
   {
     "section": "fourier-transform",
     "question": "What is the trade-off when choosing window length in STFT?",
@@ -2560,5 +3123,555 @@
           "D": "Release"
         },
         "answer": "C"
-      }
+      },        
+      {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define an analog signal in mathematical terms, as shown in the slides.",
+          "choices": {
+            "A": "x[n]: ℤ → ℝ",
+            "B": "xₐ(t): ℝ → ℝ (a function mapping continuous time to continuous amplitude)",
+            "C": "x[n,m]: ℤ² → ℤ",
+            "D": "X(f): ℝ → ℂ"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define a digital signal in mathematical terms, as shown in the slides.",
+          "choices": {
+            "A": "xₐ(t): ℝ → ℝ",
+            "B": "xₐ(x,y): ℝ² → ℝ",
+            "C": "x[n]: ℤ → ℝ or ℤ (a function mapping discrete time indices to discrete amplitude values)",
+            "D": "X(ω): ℝ → ℂ"
+          },
+          "answer": "C"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define a 2D analog image signal in mathematical terms.",
+          "choices": {
+            "A": "x[n]: ℤ → ℝ",
+            "B": "xₐ(x,y): ℝ² → ℝ (a function mapping two continuous spatial coordinates to a continuous intensity value)",
+            "C": "x[n,m]: ℤ² → ℤ",
+            "D": "x(t): ℝ → ℝ²"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define a 2D digital image signal in mathematical terms.",
+          "choices": {
+            "A": "xₐ(t): ℝ → ℝ",
+            "B": "xₐ(x,y): ℝ² → ℝ",
+            "C": "x[n,m]: ℤ² → ℤ (a function mapping two discrete spatial indices to a discrete intensity value)",
+            "D": "x[n]: ℤ → ℤ²"
+          },
+          "answer": "C"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define Sampling Frequency (Fs).",
+          "choices": {
+            "A": "The number of bits used to represent each sample",
+            "B": "The number of samples taken per unit of time (e.g., per second), measured in Hertz",
+            "C": "The highest frequency that can be represented in a digital signal",
+            "D": "The time between two consecutive samples"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "What is the relationship between a digital signal x[n] and its analog counterpart xₐ(t) using the sampling frequency?",
+          "choices": {
+            "A": "x[n] = xₐ(n × Fs)",
+            "B": "x[n] ≈ xₐ(n / Fs)",
+            "C": "x[n] = xₐ(t) × Fs",
+            "D": "x[n] = xₐ(Fs × n)"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define the amplitude scaling operation in the time domain.",
+          "choices": {
+            "A": "y[n] = x[n - k]",
+            "B": "y[n] = x₁[n] + x₂[n]",
+            "C": "y[n] = a · x[n], where 'a' is a scaling factor",
+            "D": "y[n] = x[n] / x[n-1]"
+          },
+          "answer": "C"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define the signal mixing (addition) operation in the time domain.",
+          "choices": {
+            "A": "y[n] = a · x[n]",
+            "B": "y[n] = x[n - k]",
+            "C": "y[n] = x₁[n] + x₂[n]",
+            "D": "y[n] = x₁[n] · x₂[n]"
+          },
+          "answer": "C"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define the delay (time-shifting) operation in the time domain.",
+          "choices": {
+            "A": "y[n] = a · x[n]",
+            "B": "y[n] = x₁[n] + x₂[n]",
+            "C": "y[n] = x[n + k]",
+            "D": "y[n] = x[n - k]"
+          },
+          "answer": "D"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define the spectrum of a signal.",
+          "choices": {
+            "A": "The representation of a signal's amplitude over time",
+            "B": "The amplitude (and often phase) of the signal per frequency component",
+            "C": "The total energy contained in the signal",
+            "D": "The sampling rate of the signal"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define the power spectrum of a signal.",
+          "choices": {
+            "A": "The amplitude of each frequency component",
+            "B": "The phase of each frequency component",
+            "C": "The pointwise square of the spectrum (amplitude squared per frequency)",
+            "D": "The Fourier transform of the signal"
+          },
+          "answer": "C"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define sampling in the context of digitisation.",
+          "choices": {
+            "A": "The process of rounding continuous amplitude values to discrete levels",
+            "B": "The process of converting a continuous-time signal into a discrete-time signal by taking values at regular intervals",
+            "C": "The process of filtering out high frequencies",
+            "D": "The process of amplifying a signal"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define quantization in the context of digitisation.",
+          "choices": {
+            "A": "The process of taking samples at regular time intervals",
+            "B": "The process of mapping a continuous range of amplitudes to a discrete set of amplitude levels",
+            "C": "The process of converting digital back to analog",
+            "D": "The process of compressing a digital signal"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define sample resolution (bit depth).",
+          "choices": {
+            "A": "The number of samples taken per second",
+            "B": "The number of bits used to represent each sample, defining the number of possible discrete amplitude levels",
+            "C": "The physical size of each sample in memory",
+            "D": "The frequency range that can be represented"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define quantization error.",
+          "choices": {
+            "A": "The loss of high frequencies during sampling",
+            "B": "The difference between the original continuous amplitude value and its quantized discrete value (the rounding error)",
+            "C": "The time delay introduced by the ADC",
+            "D": "The noise floor of the recording system"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define the Nyquist frequency.",
+          "choices": {
+            "A": "The sampling frequency (Fs)",
+            "B": "Half the sampling frequency (Fs/2), which is the maximum frequency that can be accurately represented without aliasing",
+            "C": "Twice the sampling frequency (2Fs)",
+            "D": "The frequency at which quantization error is minimized"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define aliasing.",
+          "choices": {
+            "A": "The process of converting analog to digital",
+            "B": "A phenomenon where frequency components above the Nyquist frequency are misrepresented as lower frequencies in the sampled signal",
+            "C": "The rounding error in quantization",
+            "D": "The amplification of certain frequencies by a filter"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "State the Sampling Theorem (Nyquist-Shannon sampling theorem) in simple terms.",
+          "choices": {
+            "A": "To accurately represent a signal, the sampling frequency must be less than the highest frequency in the signal.",
+            "B": "To accurately represent a signal, the sampling frequency must be at least twice the highest frequency present in the signal.",
+            "C": "The bit depth must be at least 16 bits for good quality.",
+            "D": "Quantization error is inversely proportional to the sampling rate."
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define a filter in the context of signal processing.",
+          "choices": {
+            "A": "A device or process that stores digital signals",
+            "B": "A signal processing unit designed to remove or attenuate certain frequency components from a signal",
+            "C": "A type of oscillator that generates waveforms",
+            "D": "An algorithm for compressing data"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define a low-pass filter.",
+          "choices": {
+            "A": "A filter that allows high frequencies to pass and attenuates low frequencies",
+            "B": "A filter that allows frequencies below a cutoff frequency to pass and attenuates frequencies above it",
+            "C": "A filter that allows a specific band of frequencies to pass",
+            "D": "A filter that attenuates a specific band of frequencies"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define a high-pass filter.",
+          "choices": {
+            "A": "A filter that allows frequencies above a cutoff frequency to pass and attenuates frequencies below it",
+            "B": "A filter that allows low frequencies to pass",
+            "C": "A filter that passes all frequencies equally",
+            "D": "A filter that removes high frequencies"
+          },
+          "answer": "A"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define a band-pass filter.",
+          "choices": {
+            "A": "A filter that passes frequencies below a cutoff",
+            "B": "A filter that passes frequencies above a cutoff",
+            "C": "A filter that passes frequencies within a certain range and attenuates frequencies outside that range",
+            "D": "A filter that attenuates a specific range of frequencies"
+          },
+          "answer": "C"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define a band-reject (notch) filter.",
+          "choices": {
+            "A": "A filter that passes all frequencies except those within a specific stopband",
+            "B": "A filter that passes only low frequencies",
+            "C": "A filter that passes only high frequencies",
+            "D": "A filter that boosts all frequencies"
+          },
+          "answer": "A"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define an anti-aliasing filter.",
+          "choices": {
+            "A": "A filter used after DAC to smooth the output",
+            "B": "A low-pass filter applied to an analog signal before sampling to remove frequency components above the Nyquist frequency",
+            "C": "A filter that enhances high frequencies",
+            "D": "A filter that reduces quantization noise"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define a reconstruction filter.",
+          "choices": {
+            "A": "A low-pass filter applied to the output of a DAC to remove high-frequency image spectra and smooth the waveform",
+            "B": "A filter applied before sampling",
+            "C": "A filter that boosts the signal's amplitude",
+            "D": "A filter that converts analog to digital"
+          },
+          "answer": "A"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define the Zero-Order Hold (ZOH) reconstruction method.",
+          "choices": {
+            "A": "Connecting samples with straight lines",
+            "B": "Holding each sample value constant until the next sample, creating a 'staircase' waveform",
+            "C": "Generating ideal impulses at each sample point",
+            "D": "Using a mathematical function to perfectly reconstruct the signal"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define a sinc function (sin(x)/x) in the context of reconstruction.",
+          "choices": {
+            "A": "A function used to generate square waves",
+            "B": "The shape of the ideal reconstruction filter in the time domain, and the function that describes the effect of zero-order hold on the spectrum",
+            "C": "A type of window function",
+            "D": "The mathematical representation of white noise"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define an oscillator in the context of signal generation.",
+          "choices": {
+            "A": "A device that filters signals",
+            "B": "A simple signal generator that produces periodic waveforms (e.g., sine, square, sawtooth)",
+            "C": "A device that records sound",
+            "D": "An algorithm for compressing audio"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define a periodic waveform.",
+          "choices": {
+            "A": "A waveform that repeats itself at regular intervals (with a fixed period)",
+            "B": "A random, non-repeating waveform",
+            "C": "A waveform that constantly increases in frequency",
+            "D": "A waveform with zero amplitude"
+          },
+          "answer": "A"
+        },
+          {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define harmonic signals (in the context of periodic waveforms).",
+          "choices": {
+            "A": "Signals that contain only one frequency",
+            "B": "Signals that contain frequency components at integer multiples of a fundamental frequency",
+            "C": "Signals with random frequency content",
+            "D": "Signals that are completely silent"
+          },
+          "answer": "B"
+        },
+          {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define white noise.",
+          "choices": {
+            "A": "Noise with energy concentrated at low frequencies",
+            "B": "Noise with energy concentrated at high frequencies",
+            "C": "Noise that has equal energy per frequency (flat spectrum)",
+            "D": "A pure tone at a single frequency"
+          },
+          "answer": "C"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define pink noise.",
+          "choices": {
+            "A": "Noise with equal energy at all frequencies",
+            "B": "Noise whose amplitude decreases with increasing frequency, proportional to 1/f (equal energy per octave)",
+            "C": "Noise whose amplitude increases with frequency",
+            "D": "A periodic waveform"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define a Voltage Controlled Oscillator (VCO).",
+          "choices": {
+            "A": "An oscillator whose frequency is controlled by an external voltage",
+            "B": "An oscillator that generates a constant frequency",
+            "C": "A filter controlled by voltage",
+            "D": "An amplifier controlled by voltage"
+          },
+          "answer": "A"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define a Voltage Controlled Filter (VCF).",
+          "choices": {
+            "A": "An oscillator controlled by voltage",
+            "B": "A filter whose cutoff frequency or resonance is controlled by an external voltage",
+            "C": "An amplifier controlled by voltage",
+            "D": "A type of envelope generator"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define a Voltage Controlled Amplifier (VCA).",
+          "choices": {
+            "A": "An oscillator whose amplitude is controlled by voltage",
+            "B": "A filter whose gain is controlled by voltage",
+            "C": "An amplifier whose gain (amplitude) is controlled by an external voltage",
+            "D": "A type of envelope generator"
+          },
+          "answer": "C"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define MIDI (Musical Instrument Digital Interface).",
+          "choices": {
+            "A": "A protocol for storing high-quality digital audio",
+            "B": "A technical standard that describes a protocol, digital interface, and connectors for communicating musical performance data (like note-on, note-off, control changes)",
+            "C": "A type of synthesizer",
+            "D": "An audio file format"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define an LFO (Low-Frequency Oscillator).",
+          "choices": {
+            "A": "An oscillator that generates audio-rate signals (20 Hz - 20 kHz)",
+            "B": "An oscillator that generates very low frequencies (typically below 20 Hz) used for modulation purposes (e.g., vibrato, tremolo)",
+            "C": "A filter that removes low frequencies",
+            "D": "An envelope generator"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define an Envelope Generator (specifically ADSR).",
+          "choices": {
+            "A": "A device that generates periodic waveforms",
+            "B": "A modulator that shapes a parameter (like amplitude or filter cutoff) over time in response to an event (like a key press)",
+            "C": "A type of noise source",
+            "D": "A filter that removes high frequencies"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define the 'Attack' stage of an ADSR envelope.",
+          "choices": {
+            "A": "The time it takes for the sound to fade to zero after the key is released",
+            "B": "The time it takes for the sound to rise from zero to its maximum level after the key is pressed",
+            "C": "The time it takes for the sound to fall from the attack level to the sustain level",
+            "D": "The level that the sound holds while the key is pressed"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define the 'Decay' stage of an ADSR envelope.",
+          "choices": {
+            "A": "The initial rise time of the sound",
+            "B": "The time it takes for the sound to fall from the attack peak to the designated sustain level",
+            "C": "The level maintained while the key is held",
+            "D": "The fade-out time after the key is released"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define the 'Sustain' stage of an ADSR envelope.",
+          "choices": {
+            "A": "The time it takes for the sound to reach its peak",
+            "B": "The time it takes to drop to the holding level",
+            "C": "The level (amplitude) that the sound maintains for as long as the key is held down",
+            "D": "The time it takes for the sound to fade out"
+          },
+          "answer": "C"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define the 'Release' stage of an ADSR envelope.",
+          "choices": {
+            "A": "The initial rise of the sound",
+            "B": "The drop from peak to sustain level",
+            "C": "The held level",
+            "D": "The time it takes for the sound to decay from the sustain level to zero after the key is released"
+          },
+          "answer": "D"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define the period (p) of a periodic signal.",
+          "choices": {
+            "A": "The number of cycles per second",
+            "B": "The duration of one complete cycle of the signal",
+            "C": "The amplitude of the signal",
+            "D": "The phase of the signal at time zero"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define frequency (f) of a periodic signal.",
+          "choices": {
+            "A": "The duration of one complete cycle",
+            "B": "The number of cycles per unit time (f = 1/p), measured in Hertz",
+            "C": "The strength of the oscillation",
+            "D": "The time delay of the signal"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define amplitude in the context of a wave or signal.",
+          "choices": {
+            "A": "The number of cycles per second",
+            "B": "The time for one complete cycle",
+            "C": "The strength or magnitude of the oscillation (e.g., loudness for sound, brightness for light)",
+            "D": "The frequency of the oscillation"
+          },
+          "answer": "C"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define decibel (dB) as a measurement unit.",
+          "choices": {
+            "A": "A linear unit of amplitude",
+            "B": "A logarithmic unit that expresses the ratio of two quantities (e.g., power or amplitude)",
+            "C": "A unit of frequency",
+            "D": "A unit of time"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define signal energy in the context of discrete-time signals.",
+          "choices": {
+            "A": "The sum of the absolute values of the signal",
+            "B": "The sum of the squares of the signal values (Σ |x[n]|²)",
+            "C": "The maximum value of the signal",
+            "D": "The average value of the signal"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define signal power.",
+          "choices": {
+            "A": "The energy of the signal",
+            "B": "The energy of the signal divided by time (average energy per unit time)",
+            "C": "The square of the amplitude",
+            "D": "The peak-to-peak amplitude"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define inharmonic signal.",
+          "choices": {
+            "A": "A signal whose frequency components are at integer multiples of a fundamental",
+            "B": "A signal whose frequency components are NOT at integer multiples of a fundamental",
+            "C": "A signal with only one frequency component",
+            "D": "A signal with no frequency components"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "dsp-fundamentals-sampling-frequency",
+          "question": "Define timbre (tone color).",
+          "choices": {
+            "A": "The fundamental frequency of a sound",
+            "B": "The loudness of a sound",
+            "C": "The characteristic quality of a sound that distinguishes different instruments playing the same note, determined by the relative strengths of its harmonic partials",
+            "D": "The duration of a sound"
+          },
+          "answer": "C"
+        }
 ]
