@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>DSP and Audio Programming Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Digital Signal Processing and Audio Programming Quiz</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="results.html">Results</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Select Section</h2>
+
+    <div class="section-buttons">
+        <a href="quiz.html?section=week-1-signal-basics" class="btn">Week 1: Signal Basics</a>
+        <a href="quiz.html?section=dsp-fundamentals-sampling-frequency" class="btn">DSP Fundamentals: Sampling and Frequency</a>
+        <a href="quiz.html?section=dsp-theory-correlation-convolution" class="btn">DSP Theory: Correlation and Convolution</a>
+        <a href="quiz.html?section=fourier-transform" class="btn">Fourier Transform</a>
+        <a href="quiz.html?section=dsp-architectures" class="btn">DSP System Architectures</a>
+        <a href="quiz.html?section=applications-data-analysis" class="btn">Applications: Data Analysis (Audio, Images, Finance)</a>
+        <a href="quiz.html?section=applications-audio-games" class="btn">Applications: Audio for Games</a>
+    </div>
+
+    <div class="progress-box">
+        <h3>Overall Progress</h3>
+        <div class="progress-bar">
+            <div id="overallProgress"></div>
+        </div>
+        <p id="progressText">0%</p>
+        <button class="btn" onclick="resetProgress()">Reset Progress</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1201 @@
+[
+  {
+    "section": "week-1-signal-basics",
+    "question": "What is a signal in the context of digital signal processing?",
+    "choices": {
+      "A": "A physical wave that travels through air",
+      "B": "Information sent through a medium, represented as a sequence of numbers",
+      "C": "A random variation in voltage",
+      "D": "A type of computer memory"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "Which of the following is an example of a 1D signal?",
+    "choices": {
+      "A": "A grayscale image",
+      "B": "A color photograph",
+      "C": "An audio recording",
+      "D": "A video file"
+    },
+    "answer": "C"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What does signal processing combine?",
+    "choices": {
+      "A": "Mathematics, physics, and technology",
+      "B": "Only computer science",
+      "C": "Art and music",
+      "D": "Biology and chemistry"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "In the context of signals, what is noise?",
+    "choices": {
+      "A": "The meaningful information",
+      "B": "Any unwanted component that interferes with the signal",
+      "C": "A type of periodic waveform",
+      "D": "The amplitude of the signal"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "Which of the following is a common application of signal processing in finance?",
+    "choices": {
+      "A": "Image compression",
+      "B": "Predicting stock prices using moving averages",
+      "C": "Rendering 3D graphics",
+      "D": "Encrypting data"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What is the purpose of a moving average filter in finance?",
+    "choices": {
+      "A": "To increase the frequency of data",
+      "B": "To remove short-term fluctuations and highlight long-term trends",
+      "C": "To add noise to the data",
+      "D": "To compress the data"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "In games, how is DSP used for reverb?",
+    "choices": {
+      "A": "To increase the pitch of sounds",
+      "B": "To simulate room acoustics based on game environment",
+      "C": "To remove all echoes",
+      "D": "To make sounds louder"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What does an ADC (Analog-to-Digital Converter) do?",
+    "choices": {
+      "A": "Converts digital signals to analog",
+      "B": "Converts analog signals to digital numbers",
+      "C": "Amplifies the signal",
+      "D": "Filters out noise"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "Which of the following is NOT a typical function of DSP?",
+    "choices": {
+      "A": "Data compression",
+      "B": "Noise reduction",
+      "C": "Creating 3D models",
+      "D": "Signal analysis"
+    },
+    "answer": "C"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What is a wave?",
+    "choices": {
+      "A": "A static pattern",
+      "B": "A process where movement travels through a medium and the medium returns to its previous state",
+      "C": "A single value over time",
+      "D": "A digital representation of sound"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "In a longitudinal wave, the movement of particles is:",
+    "choices": {
+      "A": "Perpendicular to the direction of travel",
+      "B": "Parallel to the direction of travel",
+      "C": "Circular",
+      "D": "Random"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What happens to the particles in a medium when a wave passes?",
+    "choices": {
+      "A": "They travel with the wave",
+      "B": "They oscillate around a fixed point",
+      "C": "They disappear",
+      "D": "They move in a straight line"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What does frequency measure in a wave?",
+    "choices": {
+      "A": "The height of the wave",
+      "B": "The speed of oscillation (how many cycles per second)",
+      "C": "The distance between two peaks",
+      "D": The loudness of the sound"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What does amplitude represent in a sound wave?",
+    "choices": {
+      "A": "The pitch",
+      "B": "The loudness",
+      "C": "The frequency",
+      "D": "The duration"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "If a signal has a higher frequency, what happens to its period?",
+    "choices": {
+      "A": "It increases",
+      "B": "It decreases",
+      "C": "It stays the same",
+      "D": "It becomes zero"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What is the unit of frequency?",
+    "choices": {
+      "A": "Decibel",
+      "B": "Hertz",
+      "C": "Second",
+      "D": "Ampere"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "If a signal has a frequency of 10 Hz, what is its period?",
+    "choices": {
+      "A": "10 seconds",
+      "B": "0.1 seconds",
+      "C": "1 second",
+      "D": "100 seconds"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "How is the energy of a discrete-time signal defined?",
+    "choices": {
+      "A": "The sum of absolute values",
+      "B": "The sum of squares of the signal values",
+      "C": "The maximum value",
+      "D": "The average value"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What is signal power?",
+    "choices": {
+      "A": "Energy divided by time",
+      "B": "The square of amplitude",
+      "C": "The peak value",
+      "D": "The sum of all samples"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "If you double the amplitude of a signal, what happens to its energy?",
+    "choices": {
+      "A": "It doubles",
+      "B": "It quadruples",
+      "C": "It stays the same",
+      "D": "It halves"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What does decibel (dB) measure?",
+    "choices": {
+      "A": "Absolute amplitude",
+      "B": "A logarithmic ratio of two quantities",
+      "C": "Frequency",
+      "D": "Time"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "If signal A has 10 times the energy of signal B, how many dB greater is A?",
+    "choices": {
+      "A": "10 dB",
+      "B": "20 dB",
+      "C": "3 dB",
+      "D": "100 dB"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "Approximately how many dB correspond to a factor of 2 in energy?",
+    "choices": {
+      "A": "1 dB",
+      "B": "3 dB",
+      "C": "6 dB",
+      "D": "10 dB"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What is the frequency range of human hearing?",
+    "choices": {
+      "A": "20 Hz to 20 kHz",
+      "B": "0 Hz to 10 kHz",
+      "C": "100 Hz to 100 kHz",
+      "D": "1 Hz to 1 kHz"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What is an octave in music?",
+    "choices": {
+      "A": "A doubling of frequency",
+      "B": "A halving of frequency",
+      "C": "A ratio of 3:2",
+      "D": "A 12-tone scale"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What is the reference frequency for middle A in music?",
+    "choices": {
+      "A": "220 Hz",
+      "B": "440 Hz",
+      "C": "880 Hz",
+      "D": "100 Hz"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "In the human ear, which part converts mechanical vibrations to nerve signals?",
+    "choices": {
+      "A": "Eardrum",
+      "B": "Cochlea",
+      "C": "Semicircular canals",
+      "D": "Outer ear"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What is masking in audio perception?",
+    "choices": {
+      "A": "The ability to hear all frequencies equally",
+      "B": "A strong sound making nearby weaker sounds inaudible",
+      "C": "The reflection of sound off walls",
+      "D": "The process of converting analog to digital"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "How is masking used in audio compression like MP3?",
+    "choices": {
+      "A": "To increase the bitrate",
+      "B": "To remove frequencies that are masked, reducing data",
+      "C": "To add harmonics",
+      "D": "To amplify quiet sounds"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-fundamentals-sampling-frequency",
+    "question": "What is sampling in the context of digital signals?",
+    "choices": {
+      "A": "Converting continuous time to discrete time points",
+      "B": "Rounding continuous amplitudes to discrete levels",
+      "C": "Adding noise to a signal",
+      "D": "Filtering out high frequencies"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-fundamentals-sampling-frequency",
+    "question": "What is quantization?",
+    "choices": {
+      "A": "Converting continuous time to discrete time",
+      "B": "Converting continuous amplitudes to discrete levels",
+      "C": "Increasing the sample rate",
+      "D": "Decreasing the bit depth"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-fundamentals-sampling-frequency",
+    "question": "If a signal is sampled at 44.1 kHz, what does that mean?",
+    "choices": {
+      "A": "44,100 samples are taken per second",
+      "B": "44,100 bits are used per sample",
+      "C": "The signal lasts 44.1 seconds",
+      "D": "The frequency is 44.1 Hz"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-fundamentals-sampling-frequency",
+    "question": "What is the Nyquist frequency?",
+    "choices": {
+      "A": "Half the sampling frequency",
+      "B": "Twice the sampling frequency",
+      "C": "The maximum amplitude",
+      "D": "The minimum frequency"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-fundamentals-sampling-frequency",
+    "question": "What happens if a signal contains frequencies above the Nyquist frequency?",
+    "choices": {
+      "A": "They are perfectly reproduced",
+      "B": "They cause aliasing, appearing as lower frequencies",
+      "C": "They are filtered out automatically",
+      "D": "They increase the sampling rate"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-fundamentals-sampling-frequency",
+    "question": "How many bits are needed to represent 256 different amplitude levels?",
+    "choices": {
+      "A": "8 bits",
+      "B": "16 bits",
+      "C": "4 bits",
+      "D": "32 bits"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-fundamentals-sampling-frequency",
+    "question": "What is quantization error?",
+    "choices": {
+      "A": The difference between the original analog signal and the sampled digital value",
+      "B": The loss of high frequencies",
+      "C": The noise introduced by the ADC",
+      "D": The rounding error when converting continuous amplitude to discrete levels"
+    },
+    "answer": "D"
+  },
+  {
+    "section": "dsp-fundamentals-sampling-frequency",
+    "question": "If you increase the bit depth, what happens to quantization error?",
+    "choices": {
+      "A": "It increases",
+      "B": "It decreases",
+      "C": "It stays the same",
+      "D": "It becomes zero"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-fundamentals-sampling-frequency",
+    "question": "What is the main advantage of higher sampling rates?",
+    "choices": {
+      "A": "Higher frequency resolution",
+      "B": "Ability to represent higher frequencies",
+      "C": "Lower quantization error",
+      "D": "Smaller file size"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-fundamentals-sampling-frequency",
+    "question": "What is aliasing?",
+    "choices": {
+      "A": "The process of converting analog to digital",
+      "B": "A phenomenon where high frequencies masquerade as lower frequencies due to insufficient sampling",
+      "C": "A type of filter",
+      "D": "The amplification of a signal"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-fundamentals-sampling-frequency",
+    "question": "In images, what is spatial aliasing also known as?",
+    "choices": {
+      "A": "Moiré pattern",
+      "B": "Pixelation",
+      "C": "Blurring",
+      "D": "Sharpening"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-fundamentals-sampling-frequency",
+    "question": "How can aliasing be prevented before sampling?",
+    "choices": {
+      "A": "By using a low-pass anti-aliasing filter to remove frequencies above Nyquist",
+      "B": "By increasing the bit depth",
+      "C": "By using a high-pass filter",
+      "D": "By sampling at a lower rate"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-fundamentals-sampling-frequency",
+    "question": "What is the purpose of a reconstruction filter after DAC?",
+    "choices": {
+      "A": "To remove quantization noise",
+      "B": "To smooth the stepped output and remove high-frequency images",
+      "C": "To boost the signal",
+      "D": "To convert back to digital"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-fundamentals-sampling-frequency",
+    "question": "What type of waveform does a simple oscillator produce?",
+    "choices": {
+      "A": "Only sine waves",
+      "B": "Periodic waveforms like sine, square, sawtooth",
+      "C": "Random noise",
+      "D": "Only complex signals"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-fundamentals-sampling-frequency",
+    "question": "What is white noise?",
+    "choices": {
+      "A": "Noise with equal energy at all frequencies",
+      "B": "Noise with more energy at low frequencies",
+      "C": "A pure tone",
+      "D": "Silence"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-fundamentals-sampling-frequency",
+    "question": "What does an envelope generator like ADSR control?",
+    "choices": {
+      "A": "The pitch over time",
+      "B": "The amplitude (volume) over time",
+      "C": "The frequency content",
+      "D": "The phase"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-fundamentals-sampling-frequency",
+    "question": "In an ADSR envelope, what does 'S' stand for?",
+    "choices": {
+      "A": "Sustain level",
+      "B": "Start time",
+      "C": "Slope",
+      "D": "Speed"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "What does the dot product of two signals measure?",
+    "choices": {
+      "A": "Their frequency difference",
+      "B": "Their similarity (raw correlation)",
+      "C": "Their phase difference",
+      "D": "Their energy ratio"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "How is the dot product computed?",
+    "choices": {
+      "A": "By multiplying corresponding samples and summing",
+      "B": "By subtracting one signal from another",
+      "C": "By taking the average of both signals",
+      "D": "By convolving them"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "What is autocorrelation?",
+    "choices": {
+      "A": "Correlation of two different signals",
+      "B": "Correlation of a signal with itself at different lags",
+      "C": "The energy of the signal",
+      "D": "The Fourier transform of the signal"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "Autocorrelation at lag 0 gives:",
+    "choices": {
+      "A": "The mean of the signal",
+      "B": "The energy of the signal",
+      "C": "The maximum frequency",
+      "D": "The phase"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "What is cross-correlation used for?",
+    "choices": {
+      "A": "Measuring similarity between two signals at different time lags",
+      "B": "Finding the frequency spectrum",
+      "C": "Removing noise",
+      "D": "Compressing data"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "If you add two identical signals, the energy of the sum is:",
+    "choices": {
+      "A": "Twice the energy of one",
+      "B": "Four times the energy of one",
+      "C": "The same",
+      "D": "Zero"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "If you add two signals that are exact opposites, the energy of the sum is:",
+    "choices": {
+      "A": "Twice",
+      "B": "Four times",
+      "C": "Zero",
+      "D": "Half"
+    },
+    "answer": "C"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "What is the correlation coefficient ρ?",
+    "choices": {
+      "A": "The raw dot product",
+      "B": "A normalized measure of correlation, independent of scaling",
+      "C": "The energy ratio",
+      "D": "The phase difference"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "If two signals are perfectly correlated (ρ = 1), what does that imply?",
+    "choices": {
+      "A": "They are identical up to a positive scaling factor",
+      "B": "They are exactly the same",
+      "C": "They have no relationship",
+      "D": "They are opposites"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "What does it mean if two signals have a correlation coefficient of 0?",
+    "choices": {
+      "A": "They are identical",
+      "B": "They are uncorrelated",
+      "C": "They are opposites",
+      "D": "One is twice the other"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "In the context of mono compatibility, a correlation coefficient close to 1 indicates:",
+    "choices": {
+      "A": "Poor mono compatibility",
+      "B": "Good mono compatibility",
+      "C": "Phase cancellation",
+      "D": "Noise"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "What is the Fourier transform used for?",
+    "choices": {
+      "A": "To convert a signal from time domain to frequency domain",
+      "B": "To increase the sampling rate",
+      "C": "To filter out noise",
+      "D": "To compress audio"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "The Fourier transform decomposes a signal into:",
+    "choices": {
+      "A": "A sum of sine and cosine waves of different frequencies",
+      "B": "A series of impulses",
+      "C": "A single sine wave",
+      "D": "Random noise"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "What is the spectrum of a signal?",
+    "choices": {
+      "A": "The amplitude and phase of each frequency component",
+      "B": "The time-domain waveform",
+      "C": "The energy of the signal",
+      "D": "The sampling rate"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "In the discrete Fourier transform (DFT), what does the index k represent?",
+    "choices": {
+      "A": "Time sample",
+      "B": "Frequency bin (k cycles over the signal length)",
+      "C": "Amplitude",
+      "D": "Phase"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "What is the fundamental frequency in a DFT of a signal of length N?",
+    "choices": {
+      "A": "1/N cycles per sample",
+      "B": "N cycles per sample",
+      "C": "0 Hz",
+      "D": "The Nyquist frequency"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "Why are both sine and cosine needed in Fourier analysis?",
+    "choices": {
+      "A": "To capture both amplitude and phase of each frequency",
+      "B": "To double the resolution",
+      "C": "Because signals are always periodic",
+      "D": "To avoid aliasing"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "What is the main advantage of the Fast Fourier Transform (FFT) over the DFT?",
+    "choices": {
+      "A": "It is more accurate",
+      "B": "It is computationally faster (O(N log N) vs O(N²))",
+      "C": "It works on any signal length",
+      "D": "It gives a real spectrum"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "Parseval's theorem states that:",
+    "choices": {
+      "A": "The energy in the time domain equals the energy in the frequency domain (up to a factor)",
+      "B": "The Fourier transform is linear",
+      "C": "Convolution in time equals multiplication in frequency",
+      "D": "The spectrum is symmetric"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-theory-correlation-convolution",
+    "question": "For a real-valued signal, the magnitude spectrum is:",
+    "choices": {
+      "A": "Odd symmetric",
+      "B": "Even symmetric",
+      "C": "Asymmetric",
+      "D": "Zero"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "fourier-transform",
+    "question": "What is the Short-Time Fourier Transform (STFT)?",
+    "choices": {
+      "A": "A Fourier transform applied to the entire signal at once",
+      "B": "A series of FFTs applied to overlapping windowed segments of a signal",
+      "C": "A faster version of the FFT",
+      "D": "A transform that only gives magnitude"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "fourier-transform",
+    "question": "What is a spectrogram?",
+    "choices": {
+      "A": "A 3D plot of a signal",
+      "B": "A 2D image showing frequency content over time, with intensity representing magnitude",
+      "C": "A graph of amplitude over time",
+      "D": "A list of frequencies"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "fourier-transform",
+    "question": "Why is windowing used in STFT?",
+    "choices": {
+      "A": "To increase frequency resolution",
+      "B": "To reduce spectral leakage caused by non-periodic segments",
+      "C": "To make the signal longer",
+      "D": "To add harmonics"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "fourier-transform",
+    "question": "What is spectral leakage?",
+    "choices": {
+      "A": "Loss of high frequencies",
+      "B": "Spreading of energy from one frequency bin to neighboring bins due to windowing",
+      "C": "Aliasing",
+      "D": "Quantization error"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "fourier-transform",
+    "question": "Which window function smoothly tapers to zero at the edges to reduce leakage?",
+    "choices": {
+      "A": "Rectangular window",
+      "B": "Hann window",
+      "C": "Hamming window",
+      "D": "All of the above, but Hann is common"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "fourier-transform",
+    "question": "What is the trade-off when choosing window length in STFT?",
+    "choices": {
+      "A": "Longer windows give better time resolution but worse frequency resolution",
+      "B": "Longer windows give better frequency resolution but worse time resolution",
+      "C": "Shorter windows give both better resolutions",
+      "D": "Window length does not affect resolution"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "fourier-transform",
+    "question": "What is resynthesis in the context of STFT?",
+    "choices": {
+      "A": "Reconstructing the time-domain signal from modified spectra",
+      "B": "Taking the FFT again",
+      "C": "Filtering the signal",
+      "D": "Downsampling"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "fourier-transform",
+    "question": "How can equalization be performed using the STFT?",
+    "choices": {
+      "A": "By multiplying each frequency bin in the spectrum by a gain factor",
+      "B": "By adding a constant to all samples",
+      "C": "By changing the sampling rate",
+      "D": "By applying a time delay"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "fourier-transform",
+    "question": "What is convolution?",
+    "choices": {
+      "A": "A mathematical operation that combines two signals to produce a third",
+      "B": "The same as correlation",
+      "C": "A type of filter",
+      "D": "The inverse of the Fourier transform"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "fourier-transform",
+    "question": "The convolution theorem states that:",
+    "choices": {
+      "A": "Convolution in time domain equals multiplication in frequency domain",
+      "B": "Multiplication in time equals convolution in frequency",
+      "C": "Both A and B",
+      "D": "Convolution is the same as correlation"
+    },
+    "answer": "C"
+  },
+  {
+    "section": "fourier-transform",
+    "question": "What is the impulse response of a system?",
+    "choices": {
+      "A": "The output when the input is a unit impulse",
+      "B": "The frequency response",
+      "C": "The step response",
+      "D": "The transfer function"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "fourier-transform",
+    "question": "In an FIR filter, the impulse response is:",
+    "choices": {
+      "A": "Infinite",
+      "B": "Exactly the filter coefficients",
+      "C": "Zero",
+      "D": "The same as the frequency response"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "fourier-transform",
+    "question": "What is a linear filter?",
+    "choices": {
+      "A": "A filter that changes the signal nonlinearly",
+      "B": "A filter that satisfies superposition: f(ax+by) = a f(x) + b f(y)",
+      "C": "A filter that only amplifies",
+      "D": "A filter that introduces harmonics"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "fourier-transform",
+    "question": "What is the difference between FIR and IIR filters?",
+    "choices": {
+      "A": "FIR uses only input, IIR uses input and output feedback",
+      "B": "FIR is faster, IIR is slower",
+      "C": "FIR has infinite impulse response, IIR has finite",
+      "D": "FIR is analog, IIR is digital"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "fourier-transform",
+    "question": "What does the order of a filter refer to?",
+    "choices": {
+      "A": "The number of filter coefficients minus one",
+      "B": "The cutoff frequency",
+      "C": "The number of samples processed",
+      "D": "The filter type"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-architectures",
+    "question": "What is a low-pass filter?",
+    "choices": {
+      "A": "It allows high frequencies to pass and attenuates low frequencies",
+      "B": "It allows low frequencies to pass and attenuates high frequencies",
+      "C": "It allows a band of frequencies to pass",
+      "D": "It stops a band of frequencies"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-architectures",
+    "question": "What is a high-pass filter used for?",
+    "choices": {
+      "A": "Removing low-frequency rumble",
+      "B": "Removing high-frequency noise",
+      "C": "Boosting bass",
+      "D": "Creating echoes"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-architectures",
+    "question": "What is a band-pass filter?",
+    "choices": {
+      "A": "It passes frequencies above a cutoff",
+      "B": "It passes frequencies within a certain range and attenuates others",
+      "C": "It passes all frequencies",
+      "D": "It stops a narrow band"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "dsp-architectures",
+    "question": "What is a band-stop (notch) filter?",
+    "choices": {
+      "A": "It attenuates a specific range of frequencies",
+      "B": "It passes only low frequencies",
+      "C": "It passes all frequencies",
+      "D": "It boosts a band"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-architectures",
+    "question": "What is a comb filter?",
+    "choices": {
+      "A": "A filter with a frequency response that looks like a comb, caused by short delays",
+      "B": "A filter that removes all frequencies",
+      "C": "A filter that only lets through one frequency",
+      "D": "A filter with a flat response"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-architectures",
+    "question": "What is an all-pass filter?",
+    "choices": {
+      "A": "It passes all frequencies with equal magnitude but modifies phase",
+      "B": "It blocks all frequencies",
+      "C": "It only passes a single frequency",
+      "D": "It amplifies all frequencies"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-architectures",
+    "question": "What is a shelving filter?",
+    "choices": {
+      "A": "It attenuates or boosts frequencies above or below a cutoff by a fixed amount",
+      "B": "It has a steep roll-off",
+      "C": "It creates resonance",
+      "D": "It is used only in graphics"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-architectures",
+    "question": "What does the cutoff frequency of a filter mean?",
+    "choices": {
+      "A": "The frequency at which the filter's response is -3 dB relative to the passband",
+      "B": "The highest frequency that can pass",
+      "C": "The lowest frequency that can pass",
+      "D": "The frequency of resonance"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-architectures",
+    "question": "What is filter slope measured in?",
+    "choices": {
+      "A": "dB per octave",
+      "B": "Hz",
+      "C": "Seconds",
+      "D": "Radians"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-architectures",
+    "question": "What is ripple in a filter's frequency response?",
+    "choices": {
+      "A": "Variation in the passband or stopband",
+      "B": "A peak at the cutoff",
+      "C": "The slope",
+      "D": "The phase shift"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-architectures",
+    "question": "What is resonance in a filter?",
+    "choices": {
+      "A": "A peak in the frequency response near the cutoff",
+      "B": "A dip in the response",
+      "C": "The ability to pass all frequencies",
+      "D": "The filter order"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-architectures",
+    "question": "Why are IIR filters more efficient than FIR filters for a given cutoff sharpness?",
+    "choices": {
+      "A": "They use feedback, achieving steeper roll-off with fewer coefficients",
+      "B": "They are simpler to design",
+      "C": "They have no phase distortion",
+      "D": "They are always stable"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-architectures",
+    "question": "What is a potential drawback of IIR filters?",
+    "choices": {
+      "A": "They can become unstable due to feedback",
+      "B": "They require more computation",
+      "C": "They have poor frequency resolution",
+      "D": "They cannot be implemented digitally"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-architectures",
+    "question": "In Python, which function is used to design an FIR filter?",
+    "choices": {
+      "A": "scipy.signal.firwin",
+      "B": "scipy.signal.iirdesign",
+      "C": "scipy.fft.fft",
+      "D": "numpy.convolve"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "dsp-architectures",
+    "question": "What does the 'sos' output format for IIR filters provide?",
+    "choices": {
+      "A": "Second-order sections for better numerical stability",
+      "B": "Single coefficient arrays",
+      "C": "The frequency response",
+      "D": "The impulse response"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "applications-audio-games",
+    "question": "In games, why are real-time effects often implemented in the time domain?",
+    "choices": {
+      "A": "Because frequency domain processing is too slow for real-time",
+      "B": "Because time domain is more accurate",
+      "C": "Because it's easier to code",
+      "D": "Because it uses less memory"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "applications-audio-games",
+    "question": "What is subtractive synthesis?",
+    "choices": {
+      "A": "Generating a sound by adding sine waves",
+      "B": "Starting with a harmonically rich waveform and filtering out frequencies",
+      "C": "Using only noise",
+      "D": "Sampling real instruments"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "applications-audio-games",
+    "question": "In a typical subtractive synthesizer, what does the VCF (Voltage Controlled Filter) do?",
+    "choices": {
+      "A": "Controls the amplitude",
+      "B": "Shapes the frequency content of the sound",
+      "C": "Generates the waveform",
+      "D": "Adds reverb"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "applications-audio-games",
+    "question": "What is an LFO (Low-Frequency Oscillator) used for in synthesis?",
+    "choices": {
+      "A": "To generate audible tones",
+      "B": "To modulate parameters like filter cutoff or amplitude over time",
+      "C": "To create the main sound",
+      "D": "To reduce noise"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "applications-audio-games",
+    "question": "What is convolution reverb?",
+    "choices": {
+      "A": "A reverb that uses a recorded impulse response of a real space",
+      "B": "A simple delay-based reverb",
+      "C": "A filter that creates echoes",
+      "D": "A type of chorus"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "applications-audio-games",
+    "question": "How is a flanger effect created?",
+    "choices": {
+      "A": "By using a time-varying short delay, creating a comb filter that sweeps",
+      "B": "By adding a constant delay",
+      "C": "By using a low-pass filter",
+      "D": "By distorting the signal"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "applications-audio-games",
+    "question": "What does an ADSR envelope control in a synthesizer?",
+    "choices": {
+      "A": "The pitch",
+      "B": "The volume over time (amplitude envelope)",
+      "C": "The filter cutoff",
+      "D": "The LFO rate"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "applications-data-analysis",
+    "question": "How can DSP be used in data analysis for financial time series?",
+    "choices": {
+      "A": "By applying filters to smooth out noise and identify trends",
+      "B": "By converting prices to images",
+      "C": "By using only raw data",
+      "D": "By ignoring frequency components"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "applications-data-analysis",
+    "question": "What is a common feature used in machine learning for audio analysis?",
+    "choices": {
+      "A": "Raw waveform",
+      "B": "Mel-frequency cepstral coefficients (MFCCs)",
+      "C": "Pixel values",
+      "D": "MIDI notes"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "applications-data-analysis",
+    "question": "Why are spectrograms often used as input to CNNs for audio classification?",
+    "choices": {
+      "A": "They represent time-frequency information in a 2D image-like format",
+      "B": "They are smaller than waveforms",
+      "C": "They are easier to generate",
+      "D": "They contain only magnitude"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "applications-data-analysis",
+    "question": "In image processing, what does a low-pass filter do?",
+    "choices": {
+      "A": "Sharpens edges",
+      "B": "Blurs the image by removing high-frequency details",
+      "C": "Enhances contrast",
+      "D": "Detects edges"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "applications-data-analysis",
+    "question": "What is the purpose of a high-pass filter in image processing?",
+    "choices": {
+      "A": "To blur the image",
+      "B": "To enhance edges and fine details",
+      "C": "To reduce noise",
+      "D": "To change colors"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "applications-data-analysis",
+    "question": "How can cross-correlation be used in data analysis?",
+    "choices": {
+      "A": "To find time delays between two related signals",
+      "B": "To compute the Fourier transform",
+      "C": "To filter out noise",
+      "D": "To compress data"
+    },
+    "answer": "A"
+  }
+]
