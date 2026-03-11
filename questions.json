@@ -12,6 +12,50 @@
   },
   {
     "section": "week-1-signal-basics",
+    "question": "Give the example of signals for air pressure/movement",
+    "choices": {
+      "A": "Sound",
+      "B": "Image",
+      "C": "Motion Sensing",
+      "D": "Various Quantities"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "Give the example of signals for electromagnetic radiation",
+    "choices": {
+      "A": "Sound",
+      "B": "Image",
+      "C": "Motion Sensing",
+      "D": "Various Quantities"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "Give the example of signals for acceleration, rotation",
+    "choices": {
+      "A": "Sound",
+      "B": "Image",
+      "C": "Motion Sensing",
+      "D": "Various Quantities"
+    },
+    "answer": "C"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "Give the example of signals for social or financial data",
+    "choices": {
+      "A": "Sound",
+      "B": "Image",
+      "C": "Motion Sensing",
+      "D": "Various Quantities"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "week-1-signal-basics",
     "question": "Which of the following is an example of a 1D signal?",
     "choices": {
       "A": "A grayscale image",
@@ -20,6 +64,83 @@
       "D": "A video file"
     },
     "answer": "C"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "When signal is assumed as a mathematical model, what is its definition?",
+    "choices": {
+      "A": "Signals are random variations in voltage over time",
+      "B": "Signals are digital sequences stored in computer memory",
+      "C": "Signals are physical waves that travel through air only",
+      "D": "Signals are a relevant quantity y (air pressure, pixel value), as a function of time (y = f(t)) or space (y = f(x,y))"
+    },
+    "answer": "D"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "In the mathematical model of a signal, what does the notation y = f(t) represent?",
+    "choices": {
+      "A": "y is the frequency and t is the time period",
+      "B": "y is the amplitude and t is the sampling rate",
+      "C": "y is a relevant quantity (like air pressure) that depends on time t",
+      "D": "y is the energy and t is the temperature"
+    },
+    "answer": "C"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "In the mathematical model of a 2D image signal, what does y = f(x, y) represent?",
+    "choices": {
+      "A": "The brightness value at spatial coordinates (x, y)",
+      "B": "The x and y coordinates of the camera position",
+      "C": "The red and blue color channels",
+      "D": "The horizontal and vertical resolution in pixels per inch"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What is the key difference between a 1D audio signal and a 2D image signal in mathematical terms?",
+    "choices": {
+      "A": "Audio uses complex numbers while images use real numbers",
+      "B": "Audio is a function of one variable (time), while an image is a function of two variables (spatial coordinates)",
+      "C": "Audio signals are always periodic while images are not",
+      "D": "Audio signals have higher amplitude than images"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "In the function y = f(t) for an audio signal, what physical quantity does 'y' typically represent?",
+    "choices": {
+      "A": "The frequency of the sound",
+      "B": "The air pressure variation at a point in space over time",
+      "C": "The speed of sound",
+      "D": "The wavelength of the sound wave"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "In the function I(x, y) for a grayscale image, what does I represent?",
+    "choices": {
+      "A": "The intensity or brightness at pixel position (x, y)",
+      "B": "The distance from the camera to the object at (x, y)",
+      "C": "The color saturation",
+      "D": "The x and y coordinates of the image center"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What makes a video signal three-dimensional in mathematical terms?",
+    "choices": {
+      "A": "It has red, green, and blue color channels",
+      "B": "It is a function of two spatial dimensions and time: I(x, y, t)",
+      "C": "It has height, width, and depth information",
+      "D": "It can be played in 3D glasses"
+    },
+    "answer": "B"
   },
   {
     "section": "week-1-signal-basics",
@@ -78,6 +199,17 @@
   },
   {
     "section": "week-1-signal-basics",
+    "question": "What do signals often contain...",
+    "choices": {
+      "A": "Sound",
+      "B": "Image",
+      "C": "Motion Sensing",
+      "D": "Oscillations (waves)"
+    },
+    "answer": "D"
+  },
+  {
+    "section": "week-1-signal-basics",
     "question": "What does an ADC (Analog-to-Digital Converter) do?",
     "choices": {
       "A": "Converts digital signals to analog",
@@ -100,7 +232,7 @@
   },
   {
     "section": "week-1-signal-basics",
-    "question": "What is a wave?",
+    "question": "What is a physical wave?",
     "choices": {
       "A": "A static pattern",
       "B": "A process where movement travels through a medium and the medium returns to its previous state",
@@ -119,6 +251,28 @@
       "D": "Random"
     },
     "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "In a transversal wave, the movement of particles is:",
+    "choices": {
+      "A": "Perpendicular to the direction of travel",
+      "B": "Parallel to the direction of travel",
+      "C": "Orthagonal movement",
+      "D": "Random"
+    },
+    "answer": "C"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "In a transversal wave, give an example",
+    "choices": {
+      "A": "Water",
+      "B": "Air",
+      "C": "Sound",
+      "D": "None"
+    },
+    "answer": "A"
   },
   {
     "section": "week-1-signal-basics",
@@ -144,6 +298,26 @@
   },
   {
     "section": "week-1-signal-basics",
+    "question": "What is amplitude?",
+    "choices": {
+      "A": "The strength of oscillations",
+      "B": "The length of oscillations",
+      "C": "The frequency of oscillations",
+      "D": "The duration of oscillations"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What does stronger oscillation mean in terms of sound?",
+    "choices": {
+      "A": "Louder sound",
+      "B": "Quieter sound"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "week-1-signal-basics",
     "question": "What does amplitude represent in a sound wave?",
     "choices": {
       "A": "The pitch",
@@ -152,6 +326,61 @@
       "D": "The duration"
     },
     "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What does amplitude represent in a light wave?",
+    "choices": {
+      "A": "The pitch",
+      "B": "The brightness",
+      "C": "The frequency",
+      "D": "The duration"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What does amplitude represent in a movement?",
+    "choices": {
+      "A": "The pitch",
+      "B": "The length of movement",
+      "C": "The size of movement",
+      "D": "The duration"
+    },
+    "answer": "C"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What does amplitude represent in a change?",
+    "choices": {
+      "A": "The amount of change",
+      "B": "The length of change",
+      "C": "The change",
+      "D": "The duration"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What does period (p) mean?",
+    "choices": {
+      "A": "It is the duration of a periodic signal's cycle",
+      "B": "It is the length of cycle",
+      "C": "The change within a cycle",
+      "D": "The number of cycles per time (f = 1/p)"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What does frequency (f) mean?",
+    "choices": {
+      "A": "It is the duration of a periodic signal's cycle",
+      "B": "It is the length of cycle",
+      "C": "The change within a cycle",
+      "D": "The number of cycles per time (f = 1/p)"
+    },
+    "answer": "D"
   },
   {
     "section": "week-1-signal-basics",
@@ -177,6 +406,28 @@
   },
   {
     "section": "week-1-signal-basics",
+    "question": "Hertz is a unit for frequency, how is defined?",
+    "choices": {
+      "A": "Oscillation cycles per minute",
+      "B": "Oscillation cycles per hour",
+      "C": "Oscillation cycles per second",
+      "D": "Minutes per oscillation cycle"
+    },
+    "answer": "C"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "How is the frequency of osccilation related to its period?",
+    "choices": {
+      "A": "frequency = 1 / period",
+      "B": "frequency = 1 * period",
+      "C": "frequency = 1 + period",
+      "D": "frequency = 1 - period"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "week-1-signal-basics",
     "question": "If a signal has a frequency of 10 Hz, what is its period?",
     "choices": {
       "A": "10 seconds",
@@ -191,7 +442,7 @@
     "question": "How is the energy of a discrete-time signal defined?",
     "choices": {
       "A": "The sum of absolute values",
-      "B": "The sum of squares of the signal values",
+      "B": "The sum of squares of the signal values - sum t (f(t)^2)",
       "C": "The maximum value",
       "D": "The average value"
     },
@@ -232,6 +483,28 @@
   },
   {
     "section": "week-1-signal-basics",
+    "question": "What does a/b = x dB mean?",
+    "choices": {
+      "A": "It means x = 10 log10(a/b)",
+      "B": "It means x = 1 log10(a/b)",
+      "C": "It means x = 20 log10(a/b)",
+      "D": "It means x = 100 log10(a/b)"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What does adding 10 dB corrspond to?",
+    "choices": {
+      "A": "It means multiplying by factor 10",
+      "B": "It means multiplying by factor 30",
+      "C": "It means multiplying by factor 20",
+      "D": "It means multiplying by factor 100"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "week-1-signal-basics",
     "question": "If signal A has 10 times the energy of signal B, how many dB greater is A?",
     "choices": {
       "A": "10 dB",
@@ -254,6 +527,50 @@
   },
   {
     "section": "week-1-signal-basics",
+    "question": "How much of the original energy of a signal do we get when we double its amplitude?",
+    "choices": {
+      "A": "0.5",
+      "B": "1",
+      "C": "2",
+      "D": "4"
+    },
+    "answer": "D"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "Which factor corresponds to 30dB?",
+    "choices": {
+      "A": "2",
+      "B": "200",
+      "C": "1000",
+      "D": "30"
+    },
+    "answer": "C"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "How many Decibels correspond to a factor of 1,000,000",
+    "choices": {
+      "A": "30",
+      "B": "60",
+      "C": "80",
+      "D": "100"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "If you added 20dB, what would that correspond to?",
+    "choices": {
+      "A": "*2",
+      "B": "*10",
+      "C": "*100",
+      "D": "*1000"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
     "question": "What is the frequency range of human hearing?",
     "choices": {
       "A": "20 Hz to 20 kHz",
@@ -265,12 +582,34 @@
   },
   {
     "section": "week-1-signal-basics",
+    "question": "What are basic properties of osccilating signals (waves)",
+    "choices": {
+      "A": "Colour and Frequency",
+      "B": "Frquency, Amplitude, Period",
+      "C": "Frequency",
+      "D": "Amplitude, Period, Colour"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
     "question": "What is an octave in music?",
     "choices": {
       "A": "A doubling of frequency",
       "B": "A halving of frequency",
       "C": "A ratio of 3:2",
       "D": "A 12-tone scale"
+    },
+    "answer": "A"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "How is amplitude measured?",
+    "choices": {
+      "A": "Often measures at crest and through peaks",
+      "B": "Image",
+      "C": "Motion Sensing",
+      "D": "Various Quantities"
     },
     "answer": "A"
   },
@@ -315,6 +654,612 @@
       "B": "To remove frequencies that are masked, reducing data",
       "C": "To add harmonics",
       "D": "To amplify quiet sounds"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What does a sine wave sound like in audio?",
+    "choices": {
+      "A": "A complex sound with many harmonics",
+      "B": "A pure tone with no overtones",
+      "C": "Noise",
+      "D": "Silence"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "Why are sine and cosine functions considered the building blocks of harmonic signal theory?",
+    "choices": {
+      "A": "Because they are the easiest to generate",
+      "B": "Because any periodic signal can be represented as a sum of sine and cosine waves",
+      "C": "Because they are the only functions that exist",
+      "D": "Because they have constant amplitude"
+    },
+    "answer": "B"
+  },
+
+    {
+      "section": "week-1-signal-basics",
+      "question": "What are partials, overtones, or harmonics in a complex signal?",
+      "choices": {
+        "A": "The main frequency component only",
+        "B": "Multiple frequencies that are added together with different intensities to create complex signals",
+        "C": "Unwanted noise that distorts the signal",
+        "D": "The amplitude variations over time"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What is the mathematical representation of a complex signal with multiple frequencies?",
+      "choices": {
+        "A": "s(t) = a₀ + a₁t + a₂t²",
+        "B": "s(t) = a₀f₀(t) + a₁f₁(t) + ... + aₙfₙ(t)",
+        "C": "s(t) = sin(2πft)",
+        "D": "s(t) = e^(at)"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What defines a harmonic signal?",
+      "choices": {
+        "A": "All frequencies are random and unrelated",
+        "B": "The frequencies have integer ratios between the fundamental (f₀) and the other partials",
+        "C": "The signal contains only one frequency",
+        "D": "The signal has no frequency components at all"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "If a harmonic signal has a fundamental frequency of 100 Hz, what would be the frequencies of its next two partials?",
+      "choices": {
+        "A": "150 Hz and 200 Hz",
+        "B": "200 Hz and 300 Hz",
+        "C": "110 Hz and 120 Hz",
+        "D": "50 Hz and 25 Hz"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What type of sounds are most musical sounds (approximately)?",
+      "choices": {
+        "A": "Inharmonic",
+        "B": "Harmonic",
+        "C": "Pure noise",
+        "D": "Random"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What type of sounds do bells typically produce?",
+      "choices": {
+        "A": "Harmonic sounds",
+        "B": "Inharmonic sounds",
+        "C": "Pure sine waves",
+        "D": "White noise"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What is the key characteristic of an inharmonic signal?",
+      "choices": {
+        "A": "All partials are at integer multiples of the fundamental",
+        "B": "The partials are NOT at integer multiples of the fundamental",
+        "C": "It contains only one frequency",
+        "D": "It has no frequency components"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "If a sound has frequency components at 100 Hz, 201 Hz, and 305 Hz, how would you classify it?",
+      "choices": {
+        "A": "Harmonic (close enough to integer multiples)",
+        "B": "Inharmonic (the ratios are not exact integers)",
+        "C": "Pure tone",
+        "D": "White noise"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "Why do bells produce inharmonic sounds?",
+      "choices": {
+        "A": "Because they are made of metal",
+        "B": "Because their complex shape causes vibrations at non-integer related frequencies",
+        "C": "Because they are struck with a hammer",
+        "D": "Because they are hollow"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What happens when a guitar string is plucked?",
+      "choices": {
+        "A": "It vibrates only at its fundamental frequency",
+        "B": "It vibrates in multiple modes simultaneously, creating harmonic partials",
+        "C": "It produces only inharmonic overtones",
+        "D": "It produces no sound"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What are the different modes of vibration on a guitar string?",
+      "choices": {
+        "A": "Only the whole string vibrating",
+        "B": "The whole string, halves, thirds, etc. vibrating simultaneously",
+        "C": "Only the ends vibrating",
+        "D": "Random vibrations"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "If you lightly touch a guitar string at its midpoint and pluck, what sound will you hear?",
+      "choices": {
+        "A": "The fundamental frequency",
+        "B": "An octave higher (double the frequency)",
+        "C": "A random pitch",
+        "D": "No sound at all"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "If you lightly touch a guitar string at the 7th fret position (1/3 of the string length) and pluck, what happens?",
+      "choices": {
+        "A": "You hear the fundamental frequency",
+        "B": "You hear triple the frequency (a harmonic)",
+        "C": "You hear no change",
+        "D": "You hear a random noise"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What is the relationship between the different vibration modes on a harmonic string?",
+      "choices": {
+        "A": "They have random frequency relationships",
+        "B": "They are integer multiples of each other",
+        "C": "They are all the same frequency",
+        "D": "They interfere destructively"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "How do harmonic signals sound to our ears compared to inharmonic signals?",
+      "choices": {
+        "A": "Harmonic sounds are harsher",
+        "B": "Harmonic sounds are smoother and more musical",
+        "C": "Inharmonic sounds are always louder",
+        "D": "There is no perceptual difference"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What is an example of an everyday sound that is approximately harmonic?",
+      "choices": {
+        "A": "A bell ringing",
+        "B": "A guitar note",
+        "C": "Ocean waves crashing",
+        "D": "Wind blowing"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What is an example of an everyday sound that is typically inharmonic?",
+      "choices": {
+        "A": "A piano note",
+        "B": "A bell ringing",
+        "C": "A flute note",
+        "D": "A violin note"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "In the equation s(t) = a₀f₀(t) + a₁f₁(t) + ... + aₙfₙ(t), what do the coefficients a₀, a₁, etc. represent?",
+      "choices": {
+        "A": "The frequencies of each component",
+        "B": "The intensities or amplitudes of each frequency component",
+        "C": "The phase shifts",
+        "D": "The time delays"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "If a harmonic signal has a strong fundamental and weaker harmonics, what does this mean for the sound?",
+      "choices": {
+        "A": "The fundamental frequency dominates the perceived pitch",
+        "B": "The harmonics dominate the perceived pitch",
+        "C": "The sound is pure noise",
+        "D": "The sound is inharmonic"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What gives different musical instruments their unique timbre (tone color) even when playing the same note?",
+      "choices": {
+        "A": "They all sound the same",
+        "B": "The different relative intensities (aₙ coefficients) of their harmonic partials",
+        "C": "They play at different volumes",
+        "D": "They have different fundamental frequencies"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "Why does a flute sound different from a violin playing the same note?",
+      "choices": {
+        "A": "They have different fundamental frequencies",
+        "B": "They have different harmonic content (different strengths of partials)",
+        "C": "One is louder than the other",
+        "D": "One is longer than the other"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What would a signal sound like if it contained only the fundamental frequency with no harmonics?",
+      "choices": {
+        "A": "A rich, complex sound",
+        "B": "A pure, simple tone (like a tuning fork)",
+        "C": "Noise",
+        "D": "Silence"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "How do dial tones (like in old telephones) typically sound?",
+      "choices": {
+        "A": "They are harmonic with many overtones",
+        "B": "They are a mix of two sinusoids (frequencies) that are often inharmonic",
+        "C": "They are pure noise",
+        "D": "They have no frequency content"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "Why can you clearly hear two different tones in a dial tone?",
+      "choices": {
+        "A": "Because they are harmonic multiples",
+        "B": "Because they are non-harmonic frequencies that don't blend together",
+        "C": "Because one is louder",
+        "D": "Because they are the same frequency"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What happens when frequencies are integer multiples of each other (harmonic)?",
+      "choices": {
+        "A": "They sound harsh and separate",
+        "B": "They blend together smoothly and are perceived as one sound with a rich tone",
+        "C": "They cancel each other out",
+        "D": "They create beats"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What happens when frequencies are non-integer multiples of each other (inharmonic)?",
+      "choices": {
+        "A": "They blend together perfectly",
+        "B": "They are perceived as separate, distinct tones",
+        "C": "They become silent",
+        "D": "They create a pure sine wave"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "In a harmonic series, if the fundamental is 200 Hz, what is the frequency of the 3rd harmonic?",
+      "choices": {
+        "A": "400 Hz",
+        "B": "600 Hz",
+        "C": "800 Hz",
+        "D": "200 Hz"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "In a harmonic series, if the fundamental is 150 Hz, what is the frequency of the 4th harmonic?",
+      "choices": {
+        "A": "300 Hz",
+        "B": "450 Hz",
+        "C": "600 Hz",
+        "D": "750 Hz"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What is the relationship between the first mode of vibration and the second mode on a harmonic string?",
+      "choices": {
+        "A": "The second mode is half the frequency",
+        "B": "The second mode is double the frequency",
+        "C": "They are unrelated",
+        "D": "They are the same frequency"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "On a guitar string, where is the node (point of no vibration) for the second harmonic?",
+      "choices": {
+        "A": "At the ends only",
+        "B": "At the midpoint of the string",
+        "C": "At the 1/4 point",
+        "D": "There is no node"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What happens to the harmonic content when you change the point where you pluck a guitar string?",
+      "choices": {
+        "A": "The fundamental frequency changes",
+        "B": "The relative strengths (amplitudes) of different harmonics change",
+        "C": "Nothing changes",
+        "D": "The sound becomes inharmonic"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "Why does plucking a guitar string near the bridge produce a brighter, more treble sound?",
+      "choices": {
+        "A": "Because the fundamental frequency increases",
+        "B": "Because it emphasizes higher harmonics",
+        "C": "Because it's louder",
+        "D": "Because it's closer to the ear"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "Why does plucking a guitar string over the soundhole produce a warmer, more mellow sound?",
+      "choices": {
+        "A": "Because it emphasizes the fundamental and lower harmonics",
+        "B": "Because it's quieter",
+        "C": "Because it's farther from the bridge",
+        "D": "Because the string is looser there"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What is the difference between the sound of a xylophone (harmonic) and a bell (inharmonic)?",
+      "choices": {
+        "A": "The xylophone has a clear, definite pitch; the bell has a more complex, less definite pitch",
+        "B": "The xylophone is louder",
+        "C": "The bell is louder",
+        "D": "There is no difference"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What gives a bell its characteristic 'clang' sound?",
+      "choices": {
+        "A": "Its very strong fundamental",
+        "B": "Its inharmonic partials that don't align with integer multiples",
+        "C": "Its lack of any partials",
+        "D": "Its very high amplitude"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "How do the partials of a piano string behave compared to an ideal harmonic string?",
+      "choices": {
+        "A": "They are perfectly harmonic",
+        "B": "They are slightly inharmonic due to string stiffness",
+        "C": "They are completely random",
+        "D": "They don't exist"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What is inharmonicity in the context of piano strings?",
+      "choices": {
+        "A": "Perfect integer ratios between partials",
+        "B": "Slight stretching of partials to higher frequencies due to string stiffness",
+        "C": "Complete absence of partials",
+        "D": "Extremely loud fundamental"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "Why do piano tuners stretch the tuning on high and low ends of the piano?",
+      "choices": {
+        "A": "To make it louder",
+        "B": "To compensate for the inharmonicity of the strings",
+        "C": "To make it quieter",
+        "D": "Because it's easier"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "If a sound has partials at 200 Hz, 300 Hz, and 400 Hz, is it harmonic or inharmonic?",
+      "choices": {
+        "A": "Harmonic (ratios are 1, 1.5, 2 - not all integer)",
+        "B": "Inharmonic (1.5 is not an integer ratio)",
+        "C": "Pure tone",
+        "D": "Noise"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "If a sound has partials at 200 Hz, 400 Hz, and 600 Hz, is it harmonic or inharmonic?",
+      "choices": {
+        "A": "Harmonic (ratios are 1, 2, 3 - all integers)",
+        "B": "Inharmonic",
+        "C": "Pure tone",
+        "D": "Noise"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What is the term for the lowest frequency in a harmonic series?",
+      "choices": {
+        "A": "The overtone",
+        "B": "The fundamental",
+        "C": "The partial",
+        "D": "The harmonic"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What is another name for the partials above the fundamental in a harmonic series?",
+      "choices": {
+        "A": "Fundamentals",
+        "B": "Overtones or harmonics",
+        "C": "Noise components",
+        "D": "Sub-harmonics"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "In a harmonic series, the second harmonic is how many times the fundamental frequency?",
+      "choices": {
+        "A": "1.5 times",
+        "B": "2 times",
+        "C": "3 times",
+        "D": "4 times"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "In a harmonic series, the third harmonic is how many times the fundamental frequency?",
+      "choices": {
+        "A": "1.5 times",
+        "B": "2 times",
+        "C": "3 times",
+        "D": "4 times"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What is the musical interval between the fundamental and the second harmonic?",
+      "choices": {
+        "A": "A fifth",
+        "B": "An octave",
+        "C": "A third",
+        "D": "A seventh"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What is the musical interval between the second and third harmonics?",
+      "choices": {
+        "A": "An octave",
+        "B": "A perfect fifth",
+        "C": "A major third",
+        "D": "A minor third"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What is the musical interval between the third and fourth harmonics?",
+      "choices": {
+        "A": "An octave",
+        "B": "A perfect fifth",
+        "C": "A perfect fourth",
+        "D": "A major third"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "Why do harmonic intervals like octaves and fifths sound consonant?",
+      "choices": {
+        "A": "Because they are simple frequency ratios (2:1, 3:2)",
+        "B": "Because they are complex ratios",
+        "C": "Because they are loud",
+        "D": "Because they are quiet"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "Why do inharmonic combinations often sound dissonant?",
+      "choices": {
+        "A": "Because they are simple ratios",
+        "B": "Because they have complex, non-integer frequency ratios",
+        "C": "Because they are too loud",
+        "D": "Because they are too quiet"
+      },
+      "answer": "B"
+    },
+  {
+    "section": "week-1-signal-basics",
+    "question": "In the simple harmonic motion equation, what does √(k/m) determine?",
+    "choices": {
+      "A": "The amplitude of oscillation",
+      "B": "The angular frequency of the system",
+      "C": "The phase shift",
+      "D": "The damping factor"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "Why does the frequency formula f = (1/2π)√(k/m) include 2π?",
+    "choices": {
+      "A": "Because it makes the numbers smaller",
+      "B": "Because 2π is the period of the sine function (one full cycle in radians)",
+      "C": "Because it's a random constant",
+      "D": "Because it converts to hertz"
+    },
+    "answer": "B"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "In an LC electrical circuit, what determines the resonant frequency?",
+    "choices": {
+      "A": "The voltage only",
+      "B": "The current only",
+      "C": "The capacitance and inductance (analogous to k and m)",
+      "D": "The resistance"
+    },
+    "answer": "C"
+  },
+  {
+    "section": "week-1-signal-basics",
+    "question": "What is a pure tone in audio terms?",
+    "choices": {
+      "A": "A sound with many frequencies",
+      "B": "A sine wave at a single frequency",
+      "C": "A sound with no frequency",
+      "D": "A very loud sound"
     },
     "answer": "B"
   },
@@ -1197,5 +2142,60 @@
       "D": "To compress data"
     },
     "answer": "A"
-  }
+  },
+    {
+      "section": "week-1-signal-basics",
+      "question": "How do tones and noise differ in terms of frequency content?",
+      "choices": {
+        "A": "Tones contain energy at discrete frequency points, while noise contains energy at all frequencies",
+        "B": "Tones are louder than noise",
+        "C": "Tones are always harmonic, noise is always inharmonic",
+        "D": "Tones exist only in digital signals, noise only in analog"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What is white noise?",
+      "choices": {
+        "A": "Noise with energy concentrated at low frequencies",
+        "B": "Noise with evenly distributed energy at all frequencies",
+        "C": "Noise with no energy at any frequency",
+        "D": "A pure tone at a single frequency"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What is the analog radio equivalent of noise when not tuned to a station?",
+      "choices": {
+        "A": "A pure tone",
+        "B": "Silence",
+        "C": "Static (noise containing all frequencies)",
+        "D": "A harmonic series"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "What causes the grainy appearance in photos taken in low light?",
+      "choices": {
+        "A": "Low resolution",
+        "B": "Noise in the image signal",
+        "C": "Poor focus",
+        "D": "Motion blur"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "week-1-signal-basics",
+      "question": "Why does noise in images appear more noticeable in low-light photography?",
+      "choices": {
+        "A": "Because the camera is less stable",
+        "B": "Because the signal (light) is weak, making the noise more prominent relative to the signal",
+        "C": "Because low light causes more noise",
+        "D": "Because the shutter speed is slower"
+      },
+      "answer": "B"
+    }
 ]
