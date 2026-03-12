@@ -1421,17 +1421,6 @@
   },
   {
     "section": "dsp-fundamentals-sampling-frequency",
-    "question": "What is white noise?",
-    "choices": {
-      "A": "Noise with equal energy at all frequencies",
-      "B": "Noise with more energy at low frequencies",
-      "C": "A pure tone",
-      "D": "Silence"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "dsp-fundamentals-sampling-frequency",
     "question": "What does an envelope generator like ADSR control?",
     "choices": {
       "A": "The pitch over time",
@@ -3673,5 +3662,1399 @@
             "D": "The duration of a sound"
           },
           "answer": "C"
-        }
+        },
+        {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the mathematical definition of the dot product (inner product) of two discrete signals x and y of length N?",
+            "choices": {
+              "A": "∑_{t=0}^{N-1} |x[t] - y[t]|",
+              "B": "∑_{t=0}^{N-1} x[t] · y[t]",
+              "C": "∏_{t=0}^{N-1} x[t] · y[t]",
+              "D": "max(x[t] · y[t]) for t = 0 to N-1"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What does the dot product measure between two signals?",
+            "choices": {
+              "A": "The frequency difference between them",
+              "B": "A form of similarity (raw correlation) where similar sample values at the same time indices produce larger values",
+              "C": "The time delay between them",
+              "D": "The energy ratio between them"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "If two signals x[t] and y[t] have large positive values at the same time indices, what will be the result of their dot product?",
+            "choices": {
+              "A": "A large negative value",
+              "B": "A value close to zero",
+              "C": "A large positive value",
+              "D": "It depends on their frequencies"
+            },
+            "answer": "C"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "If two signals x[t] and y[t] have large positive values where the other has large negative values at the same time indices, what will be the result of their dot product?",
+            "choices": {
+              "A": "A large positive value",
+              "B": "A large negative value",
+              "C": "Zero",
+              "D": "It depends on their frequencies"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "If both signals x[t] and y[t] have small absolute values throughout, what will be the result of their dot product?",
+            "choices": {
+              "A": "A large positive value",
+              "B": "A large negative value",
+              "C": "A small absolute value",
+              "D": "It depends on their phase"
+            },
+            "answer": "C"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the dot product sometimes called, as mentioned in the slides?",
+            "choices": {
+              "A": "The convolution sum",
+              "B": "The raw correlation",
+              "C": "The frequency product",
+              "D": "The spectral density"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "How is correlation defined when using complex numbers?",
+            "choices": {
+              "A": "∑ x[t] · y[t]",
+              "B": "∑ conj(x[t]) · y[t]",
+              "C": "∑ |x[t] · y[t]|",
+              "D": "∑ (x[t] + y[t])"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "In Python, which function should be used for correlation with complex numbers to ensure proper handling?",
+            "choices": {
+              "A": "np.dot()",
+              "B": "np.correlate()",
+              "C": "np.vdot() (ensuring the first parameter is complex)",
+              "D": "np.convolve()"
+            },
+            "answer": "C"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the correlation of a signal with itself called, and what does it equal?",
+            "choices": {
+              "A": "The cross-correlation, equal to the signal's power",
+              "B": "The autocorrelation, equal to the signal's energy",
+              "C": "The convolution, equal to the signal's frequency",
+              "D": "The covariance, equal to the signal's mean"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "In Python, how would you compute the energy of a signal x using dot product?",
+            "choices": {
+              "A": "np.sum(x)",
+              "B": "np.dot(x, x)",
+              "C": "np.correlate(x, x)",
+              "D": "np.convolve(x, x)"
+            },
+            "answer": "B"
+          },
+                  {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the mathematical definition of autocorrelation of a signal x at lag k?",
+            "choices": {
+              "A": "autocorr(x,k) = ∑_{t=0}^{N-1} x[t] · x[t - k]",
+              "B": "autocorr(x,k) = ∑_{t=0}^{N-1} x[t] · x[t + k]",
+              "C": "autocorr(x,k) = ∑_{t=0}^{N-1} |x[t] - x[t + k]|",
+              "D": "autocorr(x,k) = max(x[t], x[t + k])"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What does autocorrelation measure?",
+            "choices": {
+              "A": "The similarity between two different signals",
+              "B": "The similarity of a signal with itself at a certain time lag",
+              "C": "The frequency content of a signal",
+              "D": "The total energy of a signal"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the value of autocorrelation at lag 0?",
+            "choices": {
+              "A": "The mean of the signal",
+              "B": "The maximum value of the signal",
+              "C": "The energy of the signal",
+              "D": "Zero"
+            },
+            "answer": "C"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What practical application does autocorrelation have?",
+            "choices": {
+              "A": "Measuring the loudness of a signal",
+              "B": "Detecting periodicities in a signal",
+              "C": "Removing noise from a signal",
+              "D": "Compressing a signal"
+            },
+            "answer": "B"
+          },
+        
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the mathematical definition of cross-correlation of signals x and y at lag k?",
+            "choices": {
+              "A": "xcorr(x,y)[k] = ∑_{t=0}^{N-1} x[t] · y[t]",
+              "B": "xcorr(x,y)[k] = ∑_{t=0}^{N-1} x[t] · y[t + k]",
+              "C": "xcorr(x,y)[k] = ∑_{t=0}^{N-1} |x[t] - y[t + k]|",
+              "D": "xcorr(x,y)[k] = max(x[t], y[t + k])"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What does cross-correlation measure?",
+            "choices": {
+              "A": "The similarity of a signal with itself",
+              "B": "The similarity between two different signals at different time lags",
+              "C": "The energy of a signal",
+              "D": "The frequency spectrum of a signal"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the relationship between cross-correlation and autocorrelation?",
+            "choices": {
+              "A": "Cross-correlation is unrelated to autocorrelation",
+              "B": "Cross-correlation between a signal and itself is the autocorrelation",
+              "C": "Autocorrelation is cross-correlation with a different signal",
+              "D": "Cross-correlation is the inverse of autocorrelation"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What practical application does cross-correlation have?",
+            "choices": {
+              "A": "Detecting periodicities",
+              "B": "Measuring time delays between signals",
+              "C": "Calculating signal energy",
+              "D": "Filtering out noise"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "In cross-correlation calculations, how are values outside the signal range handled?",
+            "choices": {
+              "A": "They are ignored and the sum is shortened",
+              "B": "They are assumed to be 0 (zero-padding)",
+              "C": "They are repeated from the beginning of the signal",
+              "D": "They are set to the mean of the signal"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "In Python's np.correlate(x, y, mode='full'), what does the 'full' mode produce?",
+            "choices": {
+              "A": "Only the result at lag 0",
+              "B": "Results for positive lags only",
+              "C": "Results for all possible values of k (both positive and negative lags)",
+              "D": "The normalized correlation coefficient"
+            },
+            "answer": "C"
+          },
+        
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "When converting a stereo signal to mono by adding left and right channels, what is the energy of the resulting signal equal to?",
+            "choices": {
+              "A": "Energy(L) + Energy(R)",
+              "B": "Energy(L) + Energy(R) + 2·dot(L,R)",
+              "C": "Energy(L) + Energy(R) + dot(L,R)",
+              "D": "|Energy(L) - Energy(R)|"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "According to the slides, what is the expanded form of ∑ (x[n] + y[n])²?",
+            "choices": {
+              "A": "∑ x[n]² + ∑ y[n]²",
+              "B": "∑ x[n]² + 2∑ x[n]·y[n] + ∑ y[n]²",
+              "C": "∑ x[n]² - 2∑ x[n]·y[n] + ∑ y[n]²",
+              "D": "(∑ x[n])² + (∑ y[n])²"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "If two signals are identical (x = y), what is the energy of their sum?",
+            "choices": {
+              "A": "Energy(x)",
+              "B": "2·Energy(x)",
+              "C": "4·Energy(x)",
+              "D": "0"
+            },
+            "answer": "C"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "If two signals are exact opposites (x = -y), what is the energy of their sum?",
+            "choices": {
+              "A": "Energy(x)",
+              "B": "2·Energy(x)",
+              "C": "4·Energy(x)",
+              "D": "0 (total cancellation)"
+            },
+            "answer": "D"
+          },
+        
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is cross-covariance?",
+            "choices": {
+              "A": "Cross-correlation with the mean removed from both signals",
+              "B": "The variance of the cross-correlation",
+              "C": "Cross-correlation normalized by signal energy",
+              "D": "The convolution of two signals"
+            },
+            "answer": "A"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the purpose of removing the mean (DC offset) from signals before correlation?",
+            "choices": {
+              "A": "To increase the computational speed",
+              "B": "To measure similarity based on variations around zero, not absolute values",
+              "C": "To make the signals louder",
+              "D": "To add harmonics"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "Given x = [10, 0, -10, 0, 10] with mean = 2, what is the mean-removed signal y?",
+            "choices": {
+              "A": "[12, 2, -8, 2, 12]",
+              "B": "[8, -2, -12, -2, 8]",
+              "C": "[10, 0, -10, 0, 10]",
+              "D": "[5, -5, -15, -5, 5]"
+            },
+            "answer": "B"
+          },
+        
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the mathematical definition of the correlation coefficient ρ (rho)?",
+            "choices": {
+              "A": "ρ = dot(x,y) / √(∑ x[n]² · ∑ y[n]²)",
+              "B": "ρ = dot(x,y) / (∑ x[n]² + ∑ y[n]²)",
+              "C": "ρ = dot(x,y) / N",
+              "D": "ρ = √(dot(x,y))"
+            },
+            "answer": "A"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What does the correlation coefficient measure?",
+            "choices": {
+              "A": "The frequency difference between signals",
+              "B": "The similarity of signals independent of scaling",
+              "C": "The time delay between signals",
+              "D": "The total energy of the combined signal"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What does a correlation coefficient ρ = 1 indicate?",
+            "choices": {
+              "A": "The signals are completely uncorrelated",
+              "B": "The signals are identical up to a positive scaling factor (x = y·z where z > 0)",
+              "C": "The signals are exact opposites",
+              "D": "The signals have no relationship"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What does a correlation coefficient ρ = -1 indicate?",
+            "choices": {
+              "A": "The signals are completely uncorrelated",
+              "B": "The signals are identical",
+              "C": "The signals are exact opposites (x = y·z where z < 0)",
+              "D": "The signals have no relationship"
+            },
+            "answer": "C"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "If both signals are mean-free (mean = 0) and have the same energy, what does ρ = 0 indicate?",
+            "choices": {
+              "A": "The signals are identical",
+              "B": "The signals are opposites",
+              "C": "The signals are uncorrelated, and energy(x + y) = energy(x) + energy(y)",
+              "D": "The signals are perfectly correlated"
+            },
+            "answer": "C"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "For mean-free signals with the same energy, what is the energy of (x + y) when ρ = 1?",
+            "choices": {
+              "A": "energy(x)",
+              "B": "2·energy(x)",
+              "C": "4·energy(x)",
+              "D": "0"
+            },
+            "answer": "C"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "For mean-free signals with the same energy, what is the energy of (x + y) when ρ = -1?",
+            "choices": {
+              "A": "4·energy(x)",
+              "B": "2·energy(x)",
+              "C": "energy(x)",
+              "D": "0"
+            },
+            "answer": "D"
+          },
+        
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "Given a stereo signal with right channel r = [2,1,0,-1,-2] and left channel l = [1,2,0,-2,-1], what is their dot product?",
+            "choices": {
+              "A": "0",
+              "B": "4",
+              "C": "8 (2·1 + 1·2 + 0·0 + (-1)·(-2) + (-2)·(-1) = 2 + 2 + 0 + 2 + 2 = 8)",
+              "D": "10"
+            },
+            "answer": "C"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "For the signals r = [2,1,0,-1,-2] and l = [1,2,0,-2,-1], what is the energy of r?",
+            "choices": {
+              "A": "4",
+              "B": "8",
+              "C": "10 (4 + 1 + 0 + 1 + 4 = 10)",
+              "D": "20"
+            },
+            "answer": "C"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "For the signals r = [2,1,0,-1,-2] and l = [1,2,0,-2,-1], what is their correlation coefficient ρ?",
+            "choices": {
+              "A": "0.5",
+              "B": "0.8 (ρ = 8 / √(10·10) = 8/10 = 0.8)",
+              "C": "1.0",
+              "D": "-0.8"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "In the context of audio, what does a correlation coefficient close to 1 between left and right channels indicate?",
+            "choices": {
+              "A": "Poor mono compatibility (phase cancellation)",
+              "B": "Good mono compatibility (signals are similar)",
+              "C": "The signals are out of phase",
+              "D": "The recording has excessive stereo width"
+            },
+            "answer": "B"
+          },
+        
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "How can we find frequency components in a signal using the dot product?",
+            "choices": {
+              "A": "By taking the difference between the signal and a sine wave",
+              "B": "By calculating the dot product of the signal with sine waves of different frequencies",
+              "C": "By finding the maximum value of the signal",
+              "D": "By averaging the signal over time"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What does the dot product of a signal x with a sine wave of frequency f tell us?",
+            "choices": {
+              "A": "The exact frequency of the signal",
+              "B": "How similar x is to that sine wave, i.e., how much of frequency f is contained in x",
+              "C": "The phase of the signal at frequency f",
+              "D": "The total energy of the signal"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "For a periodic signal with period p, what frequencies should we test with the dot product?",
+            "choices": {
+              "A": "Random frequencies between 0 and Fs",
+              "B": "f₁ = 1/p, f₂ = 2/p, f₃ = 3/p, ... (integer multiples of the fundamental frequency)",
+              "C": "Only the fundamental frequency f = 1/p",
+              "D": "Frequencies above the Nyquist limit"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "In the series of sine waves for frequency analysis, what is s₀ defined as?",
+            "choices": {
+              "A": "sin(0) = 0",
+              "B": "The constant 1 (DC component)",
+              "C": "sin(2πf₁t)",
+              "D": "cos(2πf₁t)"
+            },
+            "answer": "B"
+          },
+                  {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the dot product between two different sine waves in the Fourier series (s_f₁ and s_f₂)?",
+            "choices": {
+              "A": "1",
+              "B": "It depends on their amplitudes",
+              "C": "0 (they are orthogonal)",
+              "D": "The product of their frequencies"
+            },
+            "answer": "C"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "Why is it important that different sine waves in the Fourier series have zero correlation with each other?",
+            "choices": {
+              "A": "It makes calculations faster",
+              "B": "It ensures we are separating frequencies properly (each frequency component is independent)",
+              "C": "It prevents aliasing",
+              "D": "It increases the signal energy"
+            },
+            "answer": "B"
+          },
+        
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the dot product between a sine wave and itself shifted by half a cycle (π radians)?",
+            "choices": {
+              "A": "Same as the dot product with itself",
+              "B": "Zero",
+              "C": "The negative of the dot product with itself",
+              "D": "Twice the dot product with itself"
+            },
+            "answer": "C"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the dot product between a sine wave and itself shifted by a quarter cycle (π/2 radians)?",
+            "choices": {
+              "A": "Same as the dot product with itself",
+              "B": "Zero",
+              "C": "Negative of the dot product with itself",
+              "D": "Half the dot product with itself"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "How can a cosine wave be represented in terms of sine?",
+            "choices": {
+              "A": "cos(x) = sin(x)",
+              "B": "cos(x) = sin(x + π/2)",
+              "C": "cos(x) = sin(x - π/2)",
+              "D": "cos(x) = -sin(x)"
+            },
+            "answer": "C"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "How can any sinusoid with an arbitrary phase φ be represented?",
+            "choices": {
+              "A": "As either a pure sine or pure cosine only",
+              "B": "As a combination of a sine and cosine: sin(x + φ) = a·sin(x) + b·cos(x)",
+              "C": "As the product of sine and cosine",
+              "D": "As the sum of two sines at different frequencies"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "How can the coefficients a and b be determined for representing a phase-shifted sinusoid as a combination of sine and cosine?",
+            "choices": {
+              "A": "By solving a differential equation",
+              "B": "By using dot products: a = dot(f, sin)·2/N, b = dot(f, cos)·2/N",
+              "C": "By taking the Fourier transform",
+              "D": "By finding the maximum of the signal"
+            },
+            "answer": "B"
+          },
+        
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What was Jean-Baptiste Joseph Fourier's fundamental insight from 1822?",
+            "choices": {
+              "A": "All signals are random",
+              "B": "Any periodic signal can be represented uniquely by an infinite series of sinusoids with frequencies that are integer multiples of the fundamental",
+              "C": "Signals cannot be decomposed into frequency components",
+              "D": "Only sine waves can be used for analysis"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the general form of the Fourier series for a continuous periodic signal?",
+            "choices": {
+              "A": "x(t) = ∑ a_k sin(2πkft)",
+              "B": "x(t) = ∑ b_k cos(2πkft)",
+              "C": "x(t) = b₀ + ∑ [a_k sin(2πkft) + b_k cos(2πkft)]",
+              "D": "x(t) = ∑ e^{2πkft}"
+            },
+            "answer": "C"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "For a discrete sampled signal of length N, how many sinusoids are needed in its Fourier series representation?",
+            "choices": {
+              "A": "Infinite",
+              "B": "N/2",
+              "C": "N (from k = 0 to N-1)",
+              "D": "N²"
+            },
+            "answer": "C"
+          },
+        
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the definition of a signal's spectrum?",
+            "choices": {
+              "A": "The signal's amplitude over time",
+              "B": "The amplitude and phase distribution of the signal over frequencies",
+              "C": "The total energy of the signal",
+              "D": "The sampling rate of the signal"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is angular frequency Ω in radians per second, given standard frequency f in Hz?",
+            "choices": {
+              "A": "Ω = f/2π",
+              "B": "Ω = 2πf",
+              "C": "Ω = πf",
+              "D": "Ω = f²"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is digital angular frequency ω in radians per sample?",
+            "choices": {
+              "A": "ω = 2πf (where f is in Hz)",
+              "B": "ω = 2π f/Fs (where f/Fs is cycles per sample)",
+              "C": "ω = f/Fs",
+              "D": "ω = Fs/f"
+            },
+            "answer": "B"
+          },
+        
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is Euler's formula?",
+            "choices": {
+              "A": "e^{iφ} = sin φ + i cos φ",
+              "B": "e^{iφ} = cos φ - i sin φ",
+              "C": "e^{iφ} = cos φ + i sin φ",
+              "D": "e^{iφ} = e^{cos φ} + i e^{sin φ}"
+            },
+            "answer": "C"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "How can any complex number c be represented in polar form?",
+            "choices": {
+              "A": "c = a + iφ",
+              "B": "c = a·e^{iφ} where a is the magnitude and φ is the phase angle",
+              "C": "c = a·sin(φ) + i·a·cos(φ)",
+              "D": "c = e^{a} + iφ"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "In the complex Fourier series x[n] = ∑ c_k e^{i(2π/N)nk}, what do the coefficients c_k represent?",
+            "choices": {
+              "A": "The time-domain samples",
+              "B": "The spectrum of x (combining both amplitude and phase for each frequency)",
+              "C": "The sampling frequency",
+              "D": "The signal energy"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "Given the complex Fourier coefficient c_k, how do you find the amplitude a_k and phase φ_k?",
+            "choices": {
+              "A": "a_k = |c_k|, φ_k = angle(c_k)",
+              "B": "a_k = real(c_k), φ_k = imag(c_k)",
+              "C": "a_k = |c_k|², φ_k = angle(c_k)",
+              "D": "a_k = 2·|c_k|, φ_k = angle(c_k) (for k > 0)"
+            },
+            "answer": "D"
+          },
+        
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the mathematical definition of the Discrete Fourier Transform (DFT)?",
+            "choices": {
+              "A": "X[k] = ∑_{n=0}^{N-1} x[n] e^{+i(2π/N)nk}",
+              "B": "X[k] = ∑_{n=0}^{N-1} x[n] e^{-i(2π/N)nk}",
+              "C": "X[k] = (1/N) ∑_{n=0}^{N-1} x[n] e^{-i(2π/N)nk}",
+              "D": "X[k] = ∑_{n=0}^{N-1} |x[n]| e^{-i(2π/N)nk}"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the mathematical definition of the inverse Discrete Fourier Transform (iDFT)?",
+            "choices": {
+              "A": "x[n] = ∑_{k=0}^{N-1} X[k] e^{-i(2π/N)nk}",
+              "B": "x[n] = (1/N) ∑_{k=0}^{N-1} X[k] e^{+i(2π/N)nk}",
+              "C": "x[n] = ∑_{k=0}^{N-1} X[k] e^{+i(2π/N)nk}",
+              "D": "x[n] = (1/N) ∑_{k=0}^{N-1} |X[k]| e^{+i(2π/N)nk}"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What are the two differences between the DFT and iDFT formulas?",
+            "choices": {
+              "A": "The sign in the exponent and the presence of a scaling factor (1/N)",
+              "B": "The direction of summation and the number of terms",
+              "C": "The use of sine vs. cosine",
+              "D": "The input and output data types"
+            },
+            "answer": "A"
+          },
+        
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the definition of the continuous Fourier Transform for a non-periodic function?",
+            "choices": {
+              "A": "X(f) = ∫_{-∞}^{∞} x(t) e^{+i2πft} dt",
+              "B": "X(f) = ∫_{-∞}^{∞} x(t) e^{-i2πft} dt",
+              "C": "X(f) = (1/T) ∫_{-T}^{T} x(t) e^{-i2πft} dt",
+              "D": "X(f) = ∑ x[n] e^{-i2πfn}"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the inverse continuous Fourier Transform?",
+            "choices": {
+              "A": "x(t) = ∫_{-∞}^{∞} X(f) e^{-i2πft} df",
+              "B": "x(t) = ∫_{-∞}^{∞} X(f) e^{+i2πft} df",
+              "C": "x(t) = ∑ X[k] e^{+i2πkt}",
+              "D": "x(t) = (1/2π) ∫ X(f) df"
+            },
+            "answer": "B"
+          },
+        
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "In the DFT spectrum X[k], what does the index k correspond to?",
+            "choices": {
+              "A": "k cycles per second (Hz)",
+              "B": "k cycles over the entire length L of the signal",
+              "C": "k samples in the time domain",
+              "D": "k radians per sample"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "How do you convert the DFT bin index k to a digital frequency in cycles per sample?",
+            "choices": {
+              "A": "f_digital = k",
+              "B": "f_digital = k / L (where L is the signal length in samples)",
+              "C": "f_digital = k · Fs",
+              "D": "f_digital = L / k"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "How do you convert the DFT bin index k to a frequency in Hertz?",
+            "choices": {
+              "A": "f_Hz = k · Fs",
+              "B": "f_Hz = k / Fs",
+              "C": "f_Hz = (k · Fs) / L (where L is the signal length in samples)",
+              "D": "f_Hz = L / (k · Fs)"
+            },
+            "answer": "C"
+          },
+        
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What does the DFT of a single sinusoid look like in the frequency domain?",
+            "choices": {
+              "A": "A single peak at the sinusoid's frequency (and its negative counterpart)",
+              "B": "A flat line across all frequencies",
+              "C": "A gradually decreasing curve",
+              "D": "Random noise"
+            },
+            "answer": "A"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What does the Fourier Transform of a single impulse (Dirac delta) contain?",
+            "choices": {
+              "A": "Only the frequency of the impulse",
+              "B": "All frequencies equally (flat spectrum)",
+              "C": "Only low frequencies",
+              "D": "Only high frequencies"
+            },
+            "answer": "B"
+          },
+        
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What symbol is used in the slides to denote the Fourier Transform pair relationship?",
+            "choices": {
+              "A": "↔",
+              "B": "○→ (bullet arrow)",
+              "C": "⇒",
+              "D": "⇔"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What does it mean that the Fourier Transform is linear?",
+            "choices": {
+              "A": "It only works for straight lines",
+              "B": "F(x₁ + c·x₂) = F(x₁) + c·F(x₂)",
+              "C": "The output is always a linear function",
+              "D": "It requires linear scaling of the input"
+            },
+            "answer": "B"
+          },
+        
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What does Parseval's Theorem state?",
+            "choices": {
+              "A": "The energy in the time domain equals the energy in the frequency domain",
+              "B": "The Fourier Transform is invertible",
+              "C": "The spectrum is symmetric for real signals",
+              "D": "The DFT is computationally efficient"
+            },
+            "answer": "A"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the mathematical formulation of Parseval's Theorem for the DFT?",
+            "choices": {
+              "A": "∑ |x(t)|² = ∑ |X(f)|²",
+              "B": "∑ |x(t)|² = (1/N) ∑ |X(f)|²",
+              "C": "∑ |x(t)| = ∑ |X(f)|",
+              "D": "∑ x(t)² = ∑ X(f)²"
+            },
+            "answer": "B"
+          },
+        
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "For a real-valued signal, what symmetry does the magnitude spectrum |X(f)| have?",
+            "choices": {
+              "A": "It is odd (point-symmetric about the origin)",
+              "B": "It is even (mirror-symmetric about the y-axis)",
+              "C": "It has no symmetry",
+              "D": "It is periodic with period Fs"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "For a real-valued signal, what symmetry does the phase spectrum arg(X(f)) have?",
+            "choices": {
+              "A": "It is even (mirror-symmetric)",
+              "B": "It is odd (point-symmetric about the origin)",
+              "C": "It is constant",
+              "D": "It is zero"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "For a real-valued signal, the real part of the spectrum Re(X(f)) is:",
+            "choices": {
+              "A": "Odd",
+              "B": "Even",
+              "C": "Neither even nor odd",
+              "D": "Complex"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "For a real-valued signal, the imaginary part of the spectrum Im(X(f)) is:",
+            "choices": {
+              "A": "Even",
+              "B": "Odd",
+              "C": "Zero",
+              "D": "Complex"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "Because of the symmetries in the spectrum of real signals, how much of the spectrum contains all the information?",
+            "choices": {
+              "A": "All of it (no redundancy)",
+              "B": "Half of it (the other half is redundant/symmetric)",
+              "C": "One quarter of it",
+              "D": "None of it is redundant"
+            },
+            "answer": "B"
+          },
+        
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "If you stretch a signal in time (x(ct) with c > 1), what happens to its spectrum?",
+            "choices": {
+              "A": "It stretches in frequency with increased magnitude",
+              "B": "It compresses in frequency and the magnitude is reduced by factor 1/|c|",
+              "C": "It remains unchanged",
+              "D": "It becomes shifted in frequency"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "If you shift a signal in time (x(t - t₀)), what happens to its spectrum?",
+            "choices": {
+              "A": "The magnitude spectrum changes",
+              "B": "The magnitude spectrum remains the same, but the phase is modified by a linear term: X(f) e^{-i2πft₀}",
+              "C": "The entire spectrum shifts in frequency",
+              "D": "The spectrum becomes zero"
+            },
+            "answer": "B"
+          },
+        
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the time complexity of the Fast Fourier Transform (FFT) algorithm?",
+            "choices": {
+              "A": "O(N)",
+              "B": "O(N²)",
+              "C": "O(N log N)",
+              "D": "O(log N)"
+            },
+            "answer": "C"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "Compared to the DFT, how much more efficient is the FFT for large N?",
+            "choices": {
+              "A": "DFT is O(N²), FFT is O(N log N)",
+              "B": "DFT is O(N), FFT is O(N²)",
+              "C": "They have the same complexity",
+              "D": "FFT is slower but more accurate"
+            },
+            "answer": "A"
+          },
+          {
+            "section": "dsp-theory-correlation-convolution",
+            "question": "What is the 'twiddle factor' in the FFT algorithm?",
+            "choices": {
+              "A": "The input signal",
+              "B": "The complex exponential factor e^{-i(2π/N)k} that appears when splitting the DFT into even and odd parts",
+              "C": "The output spectrum",
+              "D": "The window function"
+            },
+            "answer": "B"
+          },
+            {
+              "section": "fourier-transform",
+              "question": "What is the mathematical definition of the Discrete Fourier Transform (DFT)?",
+              "choices": {
+                "A": "X[k] = (1/N) ∑_{n=0}^{N-1} x[n] e^{-i(2π/N)nk}",
+                "B": "X[k] = ∑_{n=0}^{N-1} x[n] e^{-i(2π/N)nk}",
+                "C": "X[k] = ∑_{n=0}^{N-1} x[n] e^{+i(2π/N)nk}",
+                "D": "X[k] = ∑_{n=0}^{N-1} |x[n]| e^{-i(2π/N)nk}"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "fourier-transform",
+              "question": "What is the mathematical definition of the inverse Discrete Fourier Transform (iDFT)?",
+              "choices": {
+                "A": "x[n] = ∑_{k=0}^{N-1} X[k] e^{-i(2π/N)nk}",
+                "B": "x[n] = (1/N) ∑_{k=0}^{N-1} X[k] e^{-i(2π/N)nk}",
+                "C": "x[n] = ∑_{k=0}^{N-1} X[k] e^{+i(2π/N)nk}",
+                "D": "x[n] = (1/N) ∑_{k=0}^{N-1} X[k] e^{+i(2π/N)nk}"
+              },
+              "answer": "D"
+            },
+            {
+              "section": "fourier-transform",
+              "question": "What are the two equivalent forms of the DFT kernel e^{-i(2π/N)nk}?",
+              "choices": {
+                "A": "sin(2π(k/N)n) + i cos(2π(k/N)n)",
+                "B": "cos(2π(k/N)n) - i sin(2π(k/N)n)",
+                "C": "cos(2π(k/N)n) + i sin(2π(k/N)n)",
+                "D": "-cos(2π(k/N)n) + i sin(2π(k/N)n)"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "fourier-transform",
+              "question": "What frequencies do the DFT bins represent?",
+              "choices": {
+                "A": "f_k = k/N cycles per sample, for k = 0 to N-1",
+                "B": "f_k = k·Fs cycles per sample, for k = 0 to N-1",
+                "C": "f_k = k/N Hz, for k = 0 to N-1",
+                "D": "f_k = (k/N)·Fs Hz, for k = 0 to N/2 only"
+              },
+              "answer": "A"
+            },
+            {
+              "section": "fourier-transform",
+              "question": "What is the time complexity of the Fast Fourier Transform (FFT) algorithm?",
+              "choices": {
+                "A": "O(N)",
+                "B": "O(N²)",
+                "C": "O(N log N)",
+                "D": "O(log N)"
+              },
+              "answer": "C"
+            },
+            {
+              "section": "fourier-transform",
+              "question": "Why is zero-padding sometimes used before applying the FFT?",
+              "choices": {
+                "A": "To increase the frequency resolution",
+                "B": "To make the signal length a power of two for efficient FFT computation",
+                "C": "To remove high-frequency noise",
+                "D": "To increase the sampling rate"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "fourier-transform",
+              "question": "What does Parseval's theorem state about the energy of a signal and its spectrum?",
+              "choices": {
+                "A": "∑ |x[n]|² = ∑ |X[k]|²",
+                "B": "∑ |x[n]|² = (1/N) ∑ |X[k]|²",
+                "C": "∑ |x[n]|² = √(∑ |X[k]|²)",
+                "D": "∑ x[n]² = ∑ X[k]²"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "fourier-transform",
+              "question": "What is the difference between magnitude spectrum and power spectrum?",
+              "choices": {
+                "A": "Magnitude is |X[k]|, power spectrum is |X[k]|²",
+                "B": "Magnitude is Re(X[k]), power spectrum is |X[k]|",
+                "C": "Magnitude is |X[k]|², power spectrum is |X[k]|",
+                "D": "They are the same thing"
+              },
+              "answer": "A"
+            },
+                      {
+              "section": "fourier-transform",
+              "question": "What is the Short-Time Fourier Transform (STFT)?",
+              "choices": {
+                "A": "A single FFT applied to the entire signal",
+                "B": "A series of FFTs applied to overlapping windowed segments of a signal to show spectral changes over time",
+                "C": "A faster version of the FFT",
+                "D": "A transform that only gives phase information"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "fourier-transform",
+              "question": "What is a spectrogram?",
+              "choices": {
+                "A": "A 3D plot of amplitude over time",
+                "B": "A 2D image showing magnitude over time (x-axis) and frequency (y-axis)",
+                "C": "A graph of phase over frequency",
+                "D": "A list of frequency components"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "fourier-transform",
+              "question": "What is the trade-off when choosing the window length for STFT?",
+              "choices": {
+                "A": "Longer windows give better time resolution but worse frequency resolution",
+                "B": "Longer windows give better frequency resolution but worse time resolution",
+                "C": "Window length does not affect resolution",
+                "D": "Shorter windows give both better resolutions"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "fourier-transform",
+              "question": "What problem occurs when using a simple rectangular window on a non-periodic signal?",
+              "choices": {
+                "A": "The signal becomes too loud",
+                "B": "The FFT becomes slower",
+                "C": "Spectral leakage (artefacts) due to discontinuities at the window boundaries",
+                "D": "The phase information is lost"
+              },
+              "answer": "C"
+            },
+            {
+              "section": "fourier-transform",
+              "question": "What is the mathematical definition of the Hann (Hanning) window?",
+              "choices": {
+                "A": "w[n] = 0.5 - 0.5·cos(2π n/N)",
+                "B": "w[n] = 0.54 - 0.46·cos(2π n/N)",
+                "C": "w[n] = 1 for all n",
+                "D": "w[n] = sin(π n/N)"
+              },
+              "answer": "A"
+            },
+            {
+              "section": "fourier-transform",
+              "question": "Why does the Hann window reduce spectral leakage compared to a rectangular window?",
+              "choices": {
+                "A": "It increases the signal amplitude",
+                "B": "It smoothly tapers to zero at the edges, reducing discontinuities",
+                "C": "It has a higher frequency resolution",
+                "D": "It removes all high frequencies"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "fourier-transform",
+              "question": "What is resynthesis in the context of STFT?",
+              "choices": {
+                "A": "Taking the FFT again",
+                "B": "Recovering the time-domain signal from modified spectra",
+                "C": "Downsampling the signal",
+                "D": "Adding noise to the signal"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "fourier-transform",
+              "question": "Why are overlapping windows used in STFT resynthesis?",
+              "choices": {
+                "A": "To increase the frequency resolution",
+                "B": "To smooth the transitions and avoid clicks when reconstructing the signal",
+                "C": "To make the FFT faster",
+                "D": "To reduce the number of windows needed"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "fourier-transform",
+              "question": "What condition should window functions satisfy for smooth crossfading in overlap-add resynthesis?",
+              "choices": {
+                "A": "They should sum to 0 in the overlap region",
+                "B": "They should sum to 1 in the overlap region",
+                "C": "They should be identical",
+                "D": "They should be rectangular"
+              },
+              "answer": "B"
+            },
+                      {
+              "section": "dsp-architectures",
+              "question": "What is the mathematical definition of convolution?",
+              "choices": {
+                "A": "conv(s1,s2)[t] = ∑_{τ=0}^{N2-1} s1[t]·s2[t+τ]",
+                "B": "conv(s1,s2)[t] = ∑_{τ=0}^{N2-1} s1[t-τ]·s2[τ]",
+                "C": "conv(s1,s2)[t] = ∑_{τ=0}^{N2-1} |s1[t-τ]·s2[τ]|",
+                "D": "conv(s1,s2)[t] = max(s1[t-τ]·s2[τ])"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "dsp-architectures",
+              "question": "What is the length of the convolution result of two signals with lengths N1 and N2?",
+              "choices": {
+                "A": "max(N1, N2)",
+                "B": "min(N1, N2)",
+                "C": "N1 + N2 - 1",
+                "D": "N1 × N2"
+              },
+              "answer": "C"
+            },
+            {
+              "section": "dsp-architectures",
+              "question": "What does the convolution theorem state?",
+              "choices": {
+                "A": "Convolution in time domain equals addition in frequency domain",
+                "B": "Convolution in time domain equals multiplication in frequency domain",
+                "C": "Convolution in frequency domain equals multiplication in time domain",
+                "D": "Convolution is the same as correlation"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "dsp-architectures",
+              "question": "What is the difference between FIR and IIR filters?",
+              "choices": {
+                "A": "FIR uses only input samples, IIR uses input and feedback of output samples",
+                "B": "FIR is faster than IIR",
+                "C": "FIR has infinite impulse response, IIR has finite",
+                "D": "FIR is analog, IIR is digital"
+              },
+              "answer": "A"
+            },
+            {
+              "section": "dsp-architectures",
+              "question": "What is the general difference equation for an FIR filter of order k?",
+              "choices": {
+                "A": "y[n] = ∑_{i=0}^{k} b_i x[n-i]",
+                "B": "y[n] = ∑_{i=0}^{k} a_i y[n-i] + ∑_{i=0}^{k} b_i x[n-i]",
+                "C": "y[n] = ∑_{i=0}^{k} b_i x[n+i]",
+                "D": "y[n] = b_0 x[n]"
+              },
+              "answer": "A"
+            },
+            {
+              "section": "dsp-architectures",
+              "question": "What is the general difference equation for an IIR filter of order k?",
+              "choices": {
+                "A": "y[n] = ∑_{i=0}^{k} b_i x[n-i]",
+                "B": "y[n] = -∑_{i=1}^{k} a_i y[n-i] + ∑_{i=0}^{k} b_i x[n-i]",
+                "C": "y[n] = ∑_{i=1}^{k} a_i y[n-i] + ∑_{i=0}^{k} b_i x[n-i]",
+                "D": "y[n] = ∑_{i=0}^{k} b_i x[n-i] - ∑_{i=0}^{k} a_i y[n-i]"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "dsp-architectures",
+              "question": "What is the impulse response of an FIR filter with coefficients b = [b0, b1, b2, ..., bk]?",
+              "choices": {
+                "A": "An infinitely long decaying response",
+                "B": "The coefficients themselves: h = [b0, b1, b2, ..., bk]",
+                "C": "A single impulse at n=0",
+                "D": "The frequency response of the filter"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "dsp-architectures",
+              "question": "What does the frequency response H of a filter represent?",
+              "choices": {
+                "A": "The output signal in time domain",
+                "B": "The filter's effect on different frequency components (magnitude and phase)",
+                "C": "The impulse response squared",
+                "D": "The filter coefficients"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "dsp-architectures",
+              "question": "What are the four common types of filters?",
+              "choices": {
+                "A": "Sine, square, triangle, sawtooth",
+                "B": "Low-pass, high-pass, band-pass, band-stop",
+                "C": "FIR, IIR, FFT, DFT",
+                "D": "Echo, reverb, flanger, chorus"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "dsp-architectures",
+              "question": "What is a comb filter and how is it typically created?",
+              "choices": {
+                "A": "A filter with a flat frequency response",
+                "B": "A filter resulting from short delays, creating a frequency response with periodic peaks and notches",
+                "C": "A filter that removes all frequencies",
+                "D": "A filter that only passes a single frequency"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "dsp-architectures",
+              "question": "What is an all-pass filter?",
+              "choices": {
+                "A": "A filter that blocks all frequencies",
+                "B": "A filter that passes all frequencies with equal magnitude but modifies the phase",
+                "C": "A filter that amplifies all frequencies equally",
+                "D": "A filter that only passes frequencies above the cutoff"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "dsp-architectures",
+              "question": "What is the cutoff frequency of a filter?",
+              "choices": {
+                "A": "The frequency where the filter's response is 0 dB",
+                "B": "The frequency where the filter's response is -3 dB relative to the passband",
+                "C": "The highest frequency that can pass",
+                "D": "The frequency of resonance"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "dsp-architectures",
+              "question": "What is resonance in a filter?",
+              "choices": {
+                "A": "A dip in the frequency response",
+                "B": "A peak in the frequency response near the cutoff frequency",
+                "C": "The filter order",
+                "D": "The phase shift at the cutoff"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "dsp-architectures",
+              "question": "What is a potential drawback of IIR filters compared to FIR filters?",
+              "choices": {
+                "A": "They require more coefficients for the same cutoff sharpness",
+                "B": "They can become unstable due to feedback",
+                "C": "They have no phase response",
+                "D": "They cannot be implemented digitally"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "dsp-architectures",
+              "question": "What is the main advantage of IIR filters over FIR filters?",
+              "choices": {
+                "A": "They are always stable",
+                "B": "They can achieve a steep roll-off with fewer coefficients (more efficient)",
+                "C": "They have linear phase",
+                "D": "They are easier to design"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "dsp-architectures",
+              "question": "What does the 'sos' output format for IIR filters provide?",
+              "choices": {
+                "A": "Single coefficient arrays (b, a)",
+                "B": "Second-order sections for better numerical stability",
+                "C": "The impulse response",
+                "D": "The frequency response"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "dsp-architectures",
+              "question": "What is normalized frequency in digital filters?",
+              "choices": {
+                "A": "Frequency in Hz divided by the Nyquist frequency",
+                "B": "Frequency in cycles per sample (f/Fs), ranging from 0 to 0.5",
+                "C": "Frequency in radians per second",
+                "D": "Frequency in Hz multiplied by the sampling rate"
+              },
+              "answer": "B"
+            },
+                    {
+              "section": "applications-audio-games",
+              "question": "What is convolution reverb?",
+              "choices": {
+                "A": "A reverb created by multiple delay lines",
+                "B": "A reverb that uses a recorded impulse response of a real space convolved with the dry signal",
+                "C": "A simple echo effect",
+                "D": "A type of flanger"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "applications-audio-games",
+              "question": "How can equalization be performed using the STFT?",
+              "choices": {
+                "A": "By adding a constant to all samples",
+                "B": "By multiplying each frequency bin in the spectrum by a gain factor before resynthesis",
+                "C": "By changing the window length",
+                "D": "By applying a time delay"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "applications-audio-games",
+              "question": "What is an echo effect in terms of impulse response?",
+              "choices": {
+                "A": "An impulse response with many coefficients spread over seconds",
+                "B": "An impulse response that is a single impulse",
+                "C": "An impulse response with a flat frequency response",
+                "D": "An impulse response with a sharp peak at the cutoff"
+              },
+              "answer": "A"
+            },
+            {
+              "section": "applications-audio-games",
+              "question": "What is a flanger effect and how is it created?",
+              "choices": {
+                "A": "A static filter that removes high frequencies",
+                "B": "A time-varying filter created by mixing a signal with a delayed copy where the delay time is modulated",
+                "C": "A reverb effect",
+                "D": "A distortion effect"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "applications-audio-games",
+              "question": "What is subtractive synthesis?",
+              "choices": {
+                "A": "Adding sine waves together to create complex sounds",
+                "B": "Starting with a harmonically rich waveform and using filters to remove (subtract) frequencies to shape the sound",
+                "C": "Using only noise generators",
+                "D": "Sampling real instruments"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "applications-audio-games",
+              "question": "In a typical subtractive synthesizer, what are the three main voltage-controlled components?",
+              "choices": {
+                "A": "VCO (oscillator), VCF (filter), VCA (amplifier)",
+                "B": "VCF, VCA, LFO",
+                "C": "VCO, LFO, ADSR",
+                "D": "VCO, VCA, MIDI"
+              },
+              "answer": "A"
+            },
+            {
+              "section": "applications-audio-games",
+              "question": "Why do games typically implement real-time audio effects in the time domain rather than frequency domain?",
+              "choices": {
+                "A": "Time domain processing is more accurate",
+                "B": "Frequency domain processing (FFT) is too slow for real-time constraints",
+                "C": "Time domain uses less memory",
+                "D": "Frequency domain cannot create audio effects"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "applications-audio-games",
+              "question": "What is the purpose of a low-pass filter in subtractive synthesis?",
+              "choices": {
+                "A": "To add high-frequency harmonics",
+                "B": "To remove high frequencies, making the sound darker or mellow",
+                "C": "To create vibrato",
+                "D": "To amplify the signal"
+              },
+              "answer": "B"
+            }
 ]
